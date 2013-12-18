@@ -1,2 +1,73 @@
 /* Arquivo CSS */
 
+body{
+	background-color: gray;
+}
+
+.bg_mg{
+	background-color: black;
+	margin-left: 2.5%;
+}
+
+.bgop{
+	opacity: 0.7;
+}
+
+.mg_btns1{
+	margin-left: 200px;
+}
+
+.mg_btns2{
+	margin-left: 20px;
+}
+
+.divButtom{
+	border-radius: 100%;
+	background-color: red;
+	width: 6%;
+	height: 50%;
+	margin-top: 2.5%;
+}
+
+.divFunc{
+	background-color: red;
+	width: 15%;
+	height: 100%;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.divIdent{
+	background-color: red;
+	width: 30%;
+	height: 60%;
+	margin-top: 2.5%;
+	margin-right: 10px;
+}
+
+.pos1{
+	float: left;
+}
+
+.pos2{
+	float: right;
+}
+
+#header{
+	
+	width: 95%;
+	height: 22.5%;
+	border-top-left-radius: 25px;
+}
+
+#central{
+	width: 95%;
+	height: 74%;
+}
+
+#footer{
+	width: 95%;
+	height: 3.5%;
+	opacity: 0.8;
+	border-bottom-right-radius: 25px;
+}
