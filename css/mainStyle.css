@@ -1,34 +1,49 @@
-/* Arquivo CSS */
+/* 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
 
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 18 de Dezembro de 2013
+				Arquivo..: mainStyle.css
+
+				Descrição: Folha de estilo base da estrutura do
+				sistema
+ */
+
+/* === Formatação Geral por Tag === */
 body{
-	background-color: gray;
+	background-color: black;
 }
 
-.bg_mg{
-	background-color: black;
+/*  =========== Classes =========== */
+
+/* Geral */
+.bg_mg{ /* Cores e Margem das Divs Principais */
+	background-color: white;
 	margin-left: 2.5%;
 }
 
-.bgop{
+.bgop{ /* Opacidade das divs Header e Central */
 	opacity: 0.7;
 }
 
-.mg_btns1{
+.mg_btns1{ /* Margem entre div de função e botões do cabeçalho */
 	margin-left: 200px;
 }
 
-.mg_btns2{
+.mg_btns2{ /* Margem entre botões do cabeçalho */
 	margin-left: 20px;
 }
 
+/* Botões de acesso do cabeçalho */
 .divButtom{
 	border-radius: 100%;
-	background-color: red;
+	background-color: white;
 	width: 6%;
 	height: 50%;
 	margin-top: 2.5%;
 }
 
+/* Área de indicação da função do funcionário */
 .divFunc{
 	background-color: red;
 	width: 15%;
@@ -37,6 +52,7 @@ body{
 	border-bottom-right-radius: 100px;
 }
 
+/* Área de identificação do usuário logado */
 .divIdent{
 	background-color: red;
 	width: 30%;
@@ -45,6 +61,7 @@ body{
 	margin-right: 10px;
 }
 
+/* Posicionamento dos divs do cabeçalho */
 .pos1{
 	float: left;
 }
@@ -53,21 +70,33 @@ body{
 	float: right;
 }
 
+/* ========== ID das Tags ========== */
+
+/* Cabeçalho */
 #header{
-	
 	width: 95%;
 	height: 22.5%;
 	border-top-left-radius: 25px;
 }
 
+/* Área central */
 #central{
 	width: 95%;
 	height: 74%;
 }
 
+/* Rodapé */
 #footer{
 	width: 95%;
 	height: 3.5%;
 	opacity: 0.8;
 	border-bottom-right-radius: 25px;
+}
+
+/* ===== Formatação das imagens ===== */
+
+/* Ícones dos botões do cabeçalho */
+.btnMain{
+	height: 100%;
+	width: 100%;
 }
