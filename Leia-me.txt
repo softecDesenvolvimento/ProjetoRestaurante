@@ -1,0 +1,25 @@
+================== Informações do Projeto ===================
+
+Autor: Bruno Oliveira
+Data.: 18 de Dezembro de 2013
+
+Descrição: Páginas do sistema de controle de
+restautante.
+
+=============================================================
+
+Ponto eletrônico para controle de tempo de desenvolvimento
+
+Registro: 000016
+Nome: Bruno Oliveira
+
+  Data        Início       Término      Total
+18/12/13     18:02:43      22:03:16     4:00:33
+
+
+==============================================================
+Obs: Nas horas informadas constam tempo de desenvolvimento,
+criação e elaboração de projeto, manipulação de imagens, 
+animações e efeitos que sejam necessários.
+
+Fim do Registro.
