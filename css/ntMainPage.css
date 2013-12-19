@@ -1,0 +1,33 @@
+/* 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 18 de Dezembro de 2013
+				Arquivo..: ntMainPage.css
+
+				Descrição: Folha de estilo com formatação da página
+				inicial dos nutricionistas.
+ */
+
+/*  =========== Classes =========== */
+
+#posBtns{
+	height: 60%;
+	width: 60%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	margin-left: -400px;
+	margin-top: -140px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#btnFuncs{
+	height: 90%;
+	width: 90%;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+	
+

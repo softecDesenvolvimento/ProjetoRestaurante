@@ -27,7 +27,7 @@ body{
 }
 
 .mg_btns1{ /* Margem entre div de função e botões do cabeçalho */
-	margin-left: 200px;
+	margin-left: 450px;
 }
 
 .mg_btns2{ /* Margem entre botões do cabeçalho */
@@ -43,22 +43,47 @@ body{
 	margin-top: 2.5%;
 }
 
+.divButtom:hover{
+	background-color: green;
+}
+
 /* Área de indicação da função do funcionário */
 .divFunc{
-	background-color: red;
+	background-color: black;
 	width: 15%;
 	height: 100%;
-	border-top-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	border-top-left-radius: 25px;
+	opacity: 0.8;
 }
 
 /* Área de identificação do usuário logado */
 .divIdent{
-	background-color: red;
-	width: 30%;
+	background-color: black;
+	width: 25%;
 	height: 60%;
-	margin-top: 2.5%;
+	margin-top: 2%;
 	margin-right: 10px;
+	opacity: 0.8;
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
+
+.lblUser{
+	margin-top:15px;
+	margin-right: 40px;
+	float: right;
+	color: white;
+	font-size: 18px;
+}
+
+.btnLogout{
+	margin-top: 6px;
+	font-size: 16px;
+	width: 80px;
+	margin-left: 200px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
 }
 
 /* Posicionamento dos divs do cabeçalho */
@@ -75,14 +100,15 @@ body{
 /* Cabeçalho */
 #header{
 	width: 95%;
-	height: 22.5%;
+	height: 22%;
 	border-top-left-radius: 25px;
 }
 
 /* Área central */
 #central{
 	width: 95%;
-	height: 74%;
+	height: 72.5%;
+	margin-top: 5px;
 }
 
 /* Rodapé */

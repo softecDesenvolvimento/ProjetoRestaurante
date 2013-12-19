@@ -18,6 +18,7 @@
 
 		<!-- Ligação das folhas de estilo externas -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/ntMainPage.css">
 
 	</head>
 
@@ -25,28 +26,68 @@
 
 		<!-- Cabeçalho do Sistema -->
 		<header class="bg_mg bgop" id="header">
-				<!-- Área de identificação da função do usuário -->
-				<div class="divFunc pos1"> 
+			<!-- Área de identificação da função do usuário -->
+			<div class="divFunc pos1"> 
 
-				</div>
+			</div>
 
-				<!-- Botões de acesso a home do usuário e configurações -->
-				<div class="mg_btns1 divButtom pos1">
+			<!-- Botões de acesso a home do usuário e configurações -->
+			<div class="mg_btns1 divButtom pos1">
+
+				<a href="nutricionista.html">
 					<img src="imgs/iconHome.png" class="btnMain">
-				</div>
+				</a>
 
-				<div class="mg_btns2 divButtom pos1">
+			</div>
+
+			<div class="mg_btns2 divButtom pos1">
+
+				<a href="config.html">
 					<img src="imgs/iconConfig.png" class="btnMain">
-				</div>
+				</a>
 
-				<!-- Área de identicação do usuário logado -->
-				<div class="divIdent pos2">
-				</div>
+			</div>
+
+			<div class="mg_btns2 divButtom pos1">
+
+				<a href="config.html">
+					<img src="imgs/iconConfig.png" class="btnMain">
+				</a>
+					
+			</div>
+
+			<!-- Área de identicação do usuário logado -->
+			<div class="divIdent pos2">
+				<label class="lblUser">Nome com ate 30 caracteres</label><br />
+				<input class="btnLogout" name="btnSair" type="button" value="Sair">
+			</div>
 		</header>
 
 		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
 		<article class="bg_mg bgop" id="central">
+			<table id="posBtns">
 
+				<tr>
+					<td><input id="btnFuncs" type="button"></td>
+					<td><input id="btnFuncs" type="button"></td>
+				</tr>
+
+				<tr>
+					<td><input id="btnFuncs" type="button"></td>
+					<td><input id="btnFuncs" type="button"></td>
+				</tr>
+
+				<tr>
+					<td><input id="btnFuncs" type="button"></td>
+					<td><input id="btnFuncs" type="button"></td>
+				</tr>
+
+				<tr>
+					<td><input id="btnFuncs" type="button"></td>
+					<td><input id="btnFuncs" type="button"></td>
+				</tr>
+
+			</table>
 		</article>
 
 		<!-- Rodapé do sistema -->
