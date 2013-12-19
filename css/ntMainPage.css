@@ -12,15 +12,15 @@
 /*  =========== Classes =========== */
 
 #posBtns{
-	height: 60%;
-	width: 60%;
-	left: 50%;
-	top: 50%;
+	height: 540px;
+	width: 750px;
+	left: 608px;
+	top: 320px;
 	position: absolute;
-	margin-left: -400px;
-	margin-top: -140px;
 	text-align: center;
 	vertical-align: center;
+	margin-left: -335px;
+	margin-top: -140px;
 }
 
 #btnFuncs{
@@ -29,5 +29,3 @@
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
 }
-	
-

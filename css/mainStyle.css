@@ -19,7 +19,7 @@ body{
 /* Geral */
 .bg_mg{ /* Cores e Margem das Divs Principais */
 	background-color: white;
-	margin-left: 2.5%;
+	margin-left: 32px;
 }
 
 .bgop{ /* Opacidade das divs Header e Central */
@@ -31,16 +31,16 @@ body{
 }
 
 .mg_btns2{ /* Margem entre botões do cabeçalho */
-	margin-left: 20px;
+	margin-left: 10px;
 }
 
 /* Botões de acesso do cabeçalho */
 .divButtom{
 	border-radius: 100%;
 	background-color: white;
-	width: 6%;
-	height: 50%;
-	margin-top: 2.5%;
+	width: 60px;
+	height: 60px;
+	margin-top: 30px;
 }
 
 .divButtom:hover{
@@ -60,17 +60,17 @@ body{
 /* Área de identificação do usuário logado */
 .divIdent{
 	background-color: black;
-	width: 25%;
-	height: 60%;
-	margin-top: 2%;
-	margin-right: 10px;
+	width: 340px;
+	height: 80px;
+	margin-top: 20px;
+	margin-right: 20px;
 	opacity: 0.8;
 	border-bottom-left-radius: 50px;
 	border-top-left-radius: 50px;
 }
 
 .lblUser{
-	margin-top:15px;
+	margin-top:12px;
 	margin-right: 40px;
 	float: right;
 	color: white;
@@ -81,7 +81,8 @@ body{
 	margin-top: 6px;
 	font-size: 16px;
 	width: 80px;
-	margin-left: 200px;
+	height: 25px;
+	margin-left: 220px;
 	border-top-left-radius: 50px;
 	border-bottom-left-radius: 50px;
 }
@@ -99,22 +100,22 @@ body{
 
 /* Cabeçalho */
 #header{
-	width: 95%;
-	height: 22%;
+	width: 1216px;
+	height: 120px;
 	border-top-left-radius: 25px;
 }
 
 /* Área central */
 #central{
-	width: 95%;
-	height: 72.5%;
+	width: 1216px;
+	height: 640px;
 	margin-top: 5px;
 }
 
 /* Rodapé */
 #footer{
-	width: 95%;
-	height: 3.5%;
+	width: 1216px;
+	height: 20px;
 	opacity: 0.8;
 	border-bottom-right-radius: 25px;
 }
