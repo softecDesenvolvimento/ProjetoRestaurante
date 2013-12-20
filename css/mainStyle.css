@@ -19,7 +19,7 @@ body{
 /* Geral */
 .bg_mg{ /* Cores e Margem das Divs Principais */
 	background-color: white;
-	margin-left: 32px;
+	margin-left: 5px;
 }
 
 .bgop{ /* Opacidade das divs Header e Central */
@@ -27,7 +27,7 @@ body{
 }
 
 .mg_btns1{ /* Margem entre div de função e botões do cabeçalho */
-	margin-left: 450px;
+	margin-left: 250px;
 }
 
 .mg_btns2{ /* Margem entre botões do cabeçalho */
@@ -100,21 +100,21 @@ body{
 
 /* Cabeçalho */
 #header{
-	width: 1216px;
+	width: 1000px;
 	height: 120px;
 	border-top-left-radius: 25px;
 }
 
 /* Área central */
 #central{
-	width: 1216px;
+	width: 1000px;
 	height: 440px;
 	margin-top: 5px;
 }
 
 /* Rodapé */
 #footer{
-	width: 1216px;
+	width: 1000px;
 	height: 20px;
 	opacity: 0.8;
 	border-bottom-right-radius: 25px;

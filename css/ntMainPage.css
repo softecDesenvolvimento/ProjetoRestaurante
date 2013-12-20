@@ -14,13 +14,11 @@
 #posBtns{
 	height: 360px;
 	width: 750px;
-	left: 608px;
-	top: 310px;
+	margin-left: 125px;
+	margin-top: 40px;
 	position: absolute;
 	text-align: center;
 	vertical-align: center;
-	margin-left: -335px;
-	margin-top: -140px;
 }
 
 #btnFuncs{
