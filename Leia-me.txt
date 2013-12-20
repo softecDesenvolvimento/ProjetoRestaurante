@@ -15,7 +15,8 @@ Nome: Bruno Oliveira
 
   Data        Início       Término      Total
 18/12/13     14:02:43      18:03:16     4:00:33
-
+19/12/13     18:14:54      23:01:12     4:46:18
+20/12/13     18:37:12      20:32:10     1:54:58
 
 ==============================================================
 Obs: Nas horas informadas constam tempo de desenvolvimento,
