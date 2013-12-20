@@ -20,6 +20,8 @@
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
 		<link rel="stylesheet" type="text/css" href="css/ntMainPage.css">
 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	</head>
 
 	<body>
@@ -59,7 +61,7 @@
 			<!-- Área de identicação do usuário logado -->
 			<div class="divIdent pos2">
 				<label class="lblUser">Nome com ate 30 caracteres</label><br />
-				<input class="btnLogout" name="btnSair" type="button" value="Sair">
+				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
 			</div>
 		</header>
 
@@ -68,23 +70,43 @@
 			<table id="posBtns">
 
 				<tr>
-					<td><input id="btnFuncs" type="button"></td>
-					<td><input id="btnFuncs" type="button"></td>
+					<td>
+						<input onClick=parent.location.href="cadPrato.html" name="btnCadPrato" id="btnFuncs" type="button" value="Cadastrar Prato"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="cadCard.html" name="btnCadCard" id="btnFuncs" type="button" value="Cadastrar Cardápio"/>
+					</td>
 				</tr>
 
 				<tr>
-					<td><input id="btnFuncs" type="button"></td>
-					<td><input id="btnFuncs" type="button"></td>
+					<td>
+						<input onClick=parent.location.href="consPrato.html" name="btnConsPrato" id="btnFuncs" type="button" value="Consultar Pratos"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="consCard.html" name="btnConsCard" id="btnFuncs" type="button" value="Consultar Cardápio"/>
+					</td>
 				</tr>
 
 				<tr>
-					<td><input id="btnFuncs" type="button"></td>
-					<td><input id="btnFuncs" type="button"></td>
+					<td>
+						<input onClick=parent.location.href="consSubEst.html" name="btnConsSE" id="btnFuncs" type="button" value="Consultar Sub-Estoque"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produtos"/>
+					</td>
 				</tr>
 
 				<tr>
-					<td><input id="btnFuncs" type="button"></td>
-					<td><input id="btnFuncs" type="button"></td>
+					<td>
+						<input onClick=parent.location.href="consDia.html" name="btnConsDia" id="btnFuncs" type="button" value="Consultar Produtos por Dia"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="consSem.html" name="btnConsSem" id="btnFuncs" type="button" value="Consultar Produtos por Semana"/>
+					</td>
 				</tr>
 
 			</table>

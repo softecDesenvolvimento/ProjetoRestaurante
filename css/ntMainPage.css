@@ -12,10 +12,10 @@
 /*  =========== Classes =========== */
 
 #posBtns{
-	height: 540px;
+	height: 360px;
 	width: 750px;
 	left: 608px;
-	top: 320px;
+	top: 310px;
 	position: absolute;
 	text-align: center;
 	vertical-align: center;
@@ -24,8 +24,10 @@
 }
 
 #btnFuncs{
-	height: 90%;
-	width: 90%;
+	height: 80px;
+	width: 362px;
 	border-bottom-right-radius: 10px;
 	border-top-left-radius: 10px;
+	font-size: 18px;
+	font-family: arial;
 }
