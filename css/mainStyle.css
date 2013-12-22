@@ -118,6 +118,7 @@ body{
 	height: 20px;
 	opacity: 0.8;
 	border-bottom-right-radius: 25px;
+	position: relative;
 }
 
 /* ===== Formatação das imagens ===== */

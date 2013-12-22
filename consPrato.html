@@ -18,7 +18,7 @@
 
 		<!-- Ligação das folhas de estilo externas -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/ntMainPage.css">
+		<link rel="stylesheet" type="text/css" href="css/consPratStyle.css">
 
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -60,48 +60,50 @@
 
 		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
 		<article class="bg_mg bgop" id="central">
-			<table id="posBtns">
-
+				<br />
+			<table id="visGeral">
+				<tr class="titlePage">
+					<th>
+						<div class="title">LISTA DE PRATOS</div>
+						<div class="button">
+							<input class="btnNewCad" onClick=parent.location.href="cadPrato.html" name="btnNewCad" type="button" value="Novo prato"/>
+						</div>
+					</th>
+				</tr>
 				<tr>
 					<td>
-						<input onClick=parent.location.href="cadPrato.html" name="btnCadPrato" id="btnFuncs" type="button" value="Cadastrar Prato"/>
-					</td>
+						<div class="divCentral">				
+							<table id="mgTable">
 
-					<td>
-						<input onClick=parent.location.href="cadCard.html" name="btnCadCard" id="btnFuncs" type="button" value="Cadastrar Cardápio"/>
-					</td>
-				</tr>
+								<tr class="colTitle">
+									<th>
+										<input name="cbxAllItens" type="checkbox"/>
+									</th>
+									<th>Nome do prato</th>
+									<th>Peso</th>
+									<th>Foto</th>
+									<th>Opções</th>
+								</tr>
 
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consPrato.html" name="btnConsPrato" id="btnFuncs" type="button" value="Consultar Pratos"/>
-					</td>
-
-					<td>
-						<input onClick=parent.location.href="consCard.html" name="btnConsCard" id="btnFuncs" type="button" value="Consultar Cardápio"/>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consSubEst.html" name="btnConsSE" id="btnFuncs" type="button" value="Consultar Sub-Estoque"/>
-					</td>
-
-					<td>
-						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produtos"/>
-					</td>
-				</tr>
-
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consDia.html" name="btnConsDia" id="btnFuncs" type="button" value="Consultar Produtos por Dia"/>
-					</td>
-
-					<td>
-						<input onClick=parent.location.href="consSem.html" name="btnConsSem" id="btnFuncs" type="button" value="Consultar Produtos por Semana"/>
+								<tr>
+									<td class="colCheck bordLinhas">
+										<input name="cbxSelectItem" type="checkbox"/>
+									</td>
+									<td class="colName bordLinhas"></td>
+									<td class="colWeight bordLinhas"></td>
+									<td class="colImg bordLinhas">
+										<img src="img/teste.jpg">
+									</td>
+									<td class="colOpc bordLinhas">
+										<input class="btnOpcs" name="btnEdit" type="button"/>
+										<input class="btnOpcs" name="btnDelete" type="button" />
+									</td>
+								</tr>
+								
+							</table>
+						</div>
 					</td>
 				</tr>
-
 			</table>
 		</article>
 
