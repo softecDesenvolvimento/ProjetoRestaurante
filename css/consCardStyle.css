@@ -3,10 +3,10 @@
 
 				Projeto..: Sistema para controle de Restuarante
 				Data.....: 19 de Dezembro de 2013
-				Arquivo..: mainStyle.css
+				Arquivo..: consCardStyle.css
 
 				Descrição: Folha de estilo para página de consulta
-				de pratos
+				do Cardápio
  */
 
 /* Posicionamento da div central */
@@ -48,9 +48,13 @@
 }
 
 .btnOpcs{
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	text-align: center;
+}
+
+.btnOpcs:hover{
+	background-color: orange;
 }
 
 .btnNewCad{

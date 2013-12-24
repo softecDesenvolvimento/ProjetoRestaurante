@@ -14,7 +14,7 @@
 <html>
 	<head>
 
-		<title>Sistema - Restaurante</title>
+		<title>.:: Consulta de Cardápio ::. - Sistema de Restaurante</title>
 
 		<!-- Ligação das folhas de estilo externas -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
@@ -27,7 +27,7 @@
 	<body>
 
 		<!-- Cabeçalho do Sistema -->
-		<header class="bg_mg bgop" id="header">
+		<header class="imgHeader bg_mg bgop" id="header">
 			<!-- Área de identificação da função do usuário -->
 			<div class="divFunc pos1">
 				<br />
@@ -38,7 +38,7 @@
 			<div class="mg_btns1 divButtom pos1">
 
 				<a href="nutricionista.html">
-					<img src="imgs/iconHome.png" class="btnMain">
+					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial"/>
 				</a>
 
 			</div>
@@ -46,7 +46,7 @@
 			<div class="mg_btns2 divButtom pos1">
 
 				<a href="config.html">
-					<img src="imgs/iconConfig.png" class="btnMain">
+					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações"/>
 				</a>
 
 			</div>
@@ -58,26 +58,37 @@
 			</div>
 		</header>
 
-		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
+		<!-- Área central  -->
 		<article class="bg_mg bgop" id="central">
 			<br />
+			<!-- Tabela para exibição página -->
 			<table id="visGeral">
+
+				<!-- Linha de exibição da página -->
 				<tr class="titlePage">
 					<th>
 						<div class="title">CARDÁPIO DA SEMANA</div>
+						<!-- Botão de acesso ao cadastro do cardápio -->
 						<div class="button">
 							<input class="btnNewCad" onClick=parent.location.href="cadCard.html" name="btnNewCard" type="button" value="Definir Cardápio"/>
 						</div>
 					</th>
 				</tr>
+
+				<!-- Linha de exibição do dia da semana e pratos do dia -->
 				<tr>
 					<td>
+
+						<!-- Dia da semana -->
 						<div class="diaSemana">
 							<label>Domingo</label>
 						</div>
+
+						<!-- Tabela para exibição dos pratos do dia -->
 						<div class="divCentral">				
 							<table id="mgTable">
 
+								<!-- Título da tabela de pratos -->
 								<tr class="colTitle">
 									<th>
 										<input name="cbxAllItens" type="checkbox"/>
@@ -88,9 +99,10 @@
 									<th>Opções</th>
 								</tr>
 
+								<!-- Lista de pratos relacinados para o dia da semana definido -->
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -98,8 +110,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -128,7 +141,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -136,8 +149,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -166,7 +180,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -174,8 +188,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -204,7 +219,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -212,8 +227,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -242,7 +258,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -250,8 +266,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -280,7 +297,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -288,8 +305,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								
@@ -318,7 +336,7 @@
 
 								<tr>
 									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox"/>
+										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
 									</td>
 									<td class="colName bordLinhas"></td>
 									<td class="colWeight bordLinhas"></td>
@@ -326,8 +344,9 @@
 										<img src="img/teste.jpg">
 									</td>
 									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="button"/>
-										<input class="btnOpcs" name="btnDelete" type="button" />
+										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
+										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
+										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
 									</td>
 								</tr>
 								

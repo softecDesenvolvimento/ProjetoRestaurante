@@ -1,0 +1,88 @@
+/* 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 18 de Dezembro de 2013
+				Arquivo..: loginStyle.css
+
+				Descrição: Folha de estilo base da estrutura do
+				sistema
+ */
+
+ body{
+ 	background-color: gray;
+ 	font-family: arial;
+ }
+
+ /* formatação da div de login */
+.bgColor{
+	height: 580px;
+	width: 1024px;
+	margin-top: 0px;
+}
+
+ .titleArea{
+ 	height: 100px;
+ 	width: 600px;
+ 	border-radius: 20px;
+ 	background-color: black;
+ 	opacity: 0.8;
+ 	margin-top: 50px;
+ 	margin-left: 212px;
+ }
+
+ .loginArea{
+ 	height: 200px;
+ 	width: 400px;
+ 	background-color: black;
+ 	opacity: 0.8;
+ 	border-radius: 20px;
+ 	margin-left: 312px;
+ 	margin-top: 100px;
+ }
+
+/* Formatação do Título */
+.titleSystem{
+	font-size: 30px;
+	margin-left: 60px;
+	margin-top: 5px;
+}
+
+/* Formatação dos labels do login */
+label{
+	color: white;
+}
+
+.lblText{
+	font-size: 20px;
+}
+
+.linha{
+	height: 45px;
+	text-align: right;
+}
+
+.tabelaOrg{
+	height: 150px;
+	width: 300px;
+	margin-left: 50px;
+	margin-top: 5px;
+}
+
+.textArea{
+	width: 180px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+.txbAlign{
+	text-align: right;
+}
+
+.btnLog{
+	height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	margin-left: 25px;
+}

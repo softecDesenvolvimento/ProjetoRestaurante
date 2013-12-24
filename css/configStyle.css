@@ -1,0 +1,61 @@
+/* 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 20 de Dezembro de 2013
+				Arquivo..: configStyle.css
+
+				Descrição: Folha de estilo com formatação da página
+				inicial dos nutricionistas.
+ */
+
+/*  =========== Classes =========== */
+
+.tableWeight{
+	height: 120px;
+	width: 600px;
+	margin-left: 200px;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.titleTable{
+	height: 30px;
+	background-color: green;
+	color: white;
+}
+
+.txbForm{
+	font-size: 20px;
+	border-radius: 10px;
+}
+
+tr:first-of-type th:first-child {
+  border-top-left-radius: 20px;    
+}
+
+tr:first-of-type th:last-child {
+  border-top-right-radius: 20px;    
+}
+
+.textPos{
+	text-align: right;
+}
+
+.txbPos{
+	text-align: left;
+}
+
+.btnsConfig{
+	height: 30px;
+	width: 100px;
+	border-radius: 10px;
+	margin-left: 240px;
+}
+
+.mgMail{
+	width: 228px;
+}
