@@ -1,0 +1,195 @@
+<!-- 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 18 de Dezembro de 2013
+				Arquivo..: nutricionista.html
+
+				Descrição: página inicial de acesso do sistema 
+				para o nutricionista
+-->
+
+<DOCTYPE hmtl>
+
+<html>
+	<head>
+
+		<title>Sistema - Restaurante</title>
+
+		<!-- Ligação das folhas de estilo externas -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/cadPratoStyle.css">
+
+		<script type="text/javascript" src="javascript/cadPratoFunc.js"></script>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	</head>
+
+	<body onLoad=divVisible(0);>
+
+		<!-- Cabeçalho do Sistema -->
+		<header class="imgHeader bg_mg bgop" id="header">
+			<!-- Área de identificação da função do usuário -->
+			<div class="divFunc pos1">
+				<br />
+				<label class="identFunc">NT</label>
+			</div>
+
+			<!-- Botões de acesso a home do usuário e configurações -->
+			<div class="mg_btns1 divButtom pos1">
+
+				<a href="nutricionista.html">
+					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
+				</a>
+
+			</div>
+
+			<div class="mg_btns2 divButtom pos1">
+
+				<a href="config.html">
+					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações" />
+				</a>
+
+			</div>
+
+			<!-- Área de identicação do usuário logado -->
+			<div class="divIdent pos2">
+				<label class="lblUser">Nome com ate 30 caracteres</label><br />
+				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			</div>
+		</header>
+
+		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
+		<article class="bg_mg bgop" id="centralCad">
+			<br />
+
+			<div class="cadProgress">
+
+				<div id="step1" class="number1">
+					<label class="posProgress">1</label>
+				</div>
+
+				<label class="textIdent">IDENTIFICAÇÃO</label>
+				<div id="step1b" class="bar">
+				</div>
+
+				<div id="step2" class="number">
+					<label class="posProgress">2</label>
+				</div>
+
+				<label class="textIdent">INGREDIENTES</label>
+				<div id="step2b" class="bar">
+				</div>
+
+				<div id="step3" class="number">
+					<label class="posProgress">3</label>
+				</div>
+
+				<label class="textIdent">MODO DE PREPARO</label>
+				<div id="step3b" class="bar">
+				</div>
+
+				<div id="step4" class="number">
+					<label class="posProgress2">OK</label>
+				</div>
+
+			</div>
+
+
+			<div class="frmIdentif" id="enableIdent">
+				<br>
+				<form>
+
+					<table class="tabFormIdent">
+
+						<tr>
+							<td class="colLbl">Nome do Prato:</td>
+							<td class="colTxb">
+								<input class="txbForm" type="text" name="txbNomePrat">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Categoria:</td>
+							<td>
+								<select class="txbForm" name="cbxCateg">
+									<option>Selecione uma categoria...</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Grupo:</td>
+							<td>
+								<select class="txbForm" name="cbxGrupo">
+									<option>Selecione um grupo...</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Preparado por:</td>
+							<td>
+								<input class="txbForm" type="text" name="txbPrepPor">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Aprovado em:</td>
+							<td>
+								<input class="txbForm" type="date" name="dtpAprov">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Fonte:</td>
+							<td>
+								<input class="txbForm" type="text" name="txbFonte">
+							</td>
+						</tr>
+
+						<tr>
+							<td class="colLbl">Tempo de preparo:</td>
+							<td>
+								<input class="txbForm" type="text" name="txbTempo">
+							</td>
+						</tr>
+
+					</table>
+
+				</form>
+				<div class="divNextBack">
+					<input class="btnNext" type="button" name="btnNext1" onClick=divVisible(1); value="Próximo">
+				</div>
+			</div>
+
+
+
+			<div class="frmIngred" id="enableIngred">
+				<br>
+				<input type="button" name="btnNext2" onClick=divVisible(2); value="Próximo">
+				<input type="button" name="btnNext3" onClick=divVisible(0); value="Anterior">
+			</div>
+
+
+
+			<div class="frmPreparo" id="enablePreparo">
+				<br>
+				<input type="button" name="btnNext3" onClick=divVisible(3); value="Concluir">
+				<input type="button" name="btnNext3" onClick=divVisible(1); value="Anterior">
+			</div>
+
+			<div class="frmFim" id="enableFim">
+			</div>
+
+			
+		</article>
+		<!-- Rodapé do sistema -->
+		<footer class="bg_mg" id="footer">
+
+		</footer>
+
+	</body>
+
+</html>
