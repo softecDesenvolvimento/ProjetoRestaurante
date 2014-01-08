@@ -1,0 +1,119 @@
+<!-- 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 08 de janeiro de 2014
+				Arquivo..: cozinha.html
+
+				Descrição: página inicial de acesso do sistema 
+				para o Cozinheiro, Saladeiro, Aux. Cozinheiro e Aux. Saladeiro(CZ, SL, AC, AS)
+-->
+
+<DOCTYPE hmtl>
+
+<html>
+	<head>
+		<title>Sistema - Restaurante</title>
+
+		<!-- Ligação das folhas de estilo externas -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/czMainPage.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	</head>
+
+	<body>
+
+		<!-- Cabeçalho do Sistema -->
+		<header class="imgHeader bg_mg bgop" id="header">
+			<!-- Área de identificação da função do usuário -->
+			<!-- 
+			===============================================================================
+			Podem se logar nesse menu principal o Cozinheiro, Saladeiro, Aux. Cozinheiro e 
+			Aux. Saladeiro(CZ, SL, AC, AS), visto que todos tem as mesmas funções
+			===============================================================================
+			-->
+			<div class="divFunc pos1">
+				<br />
+				<label class="identFunc">CZ</label>
+				<!--
+				<label class="identFunc">SL</label>
+				<label class="identFunc">AC</label>
+				<label class="identFunc">AS</label>
+				-->
+			</div>
+
+			<!-- Botões de acesso a home do usuário e configurações -->
+			<div class="mg_btns1 divButtom pos1">
+				<a href="cozinha.html">
+					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
+				</a>
+			</div>
+
+			<div class="mg_btns2 divButtom pos1">
+				<a href="config.html">
+					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações" />
+				</a>
+			</div>
+
+			<!-- Área de identicação do usuário logado -->
+			<div class="divIdent pos2">
+				<label class="lblUser">Nome com ate 30 caracteres</label><br />
+				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			</div>
+		</header>
+
+		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
+		<article class="bg_mg bgop" id="central">
+			<table id="posBtns">
+				<tr>
+					<td>
+						<input onClick=parent.location.href="listProdDia.html" name="btnListProdDia" id="btnFuncs" type="button" value="Lista de Produtos do dia"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="listProducao.html" name="btnListProducao" id="btnFuncs" type="button" value="Lista de Producao"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produto"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="consCard.html" name="btnConsSubEst" id="btnFuncs" type="button" value="Consultar Sub-Estoque"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consPrato.html" name="btnConsPrato" id="btnFuncs" type="button" value="Consultar Prato"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="consCard.html" name="btnConsCard" id="btnFuncs" type="button" value="Consutar Cardapio"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consDia.html" name="btnConsDia" id="btnFuncs" type="button" value="Consultar Produtos do Dia"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="consSem.html" name="btnConsSem" id="btnFuncs" type="button" value="Consultar Produtos da Semana"/>
+					</td>
+				</tr>
+
+			</table>
+		</article>
+
+		<!-- Rodapé do sistema -->
+		<footer class="bg_mg" id="footer">
+
+		</footer>
+
+	</body>
+
+</html>

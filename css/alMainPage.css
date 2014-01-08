@@ -1,0 +1,46 @@
+/* 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 08 de janeiro de 2013
+				Arquivo..: alMainPage.css
+
+				Descrição: Folha de estilo com formatação da página
+				inicial do almoxarife
+ */
+
+/*  =========== Classes =========== */
+
+.identFunc{
+	font-size: 50px;
+	color: white;
+	font-family: arial;
+	margin-left: 35px;
+	opacity: 1.8;
+}
+
+/*  ===========   ID's  =========== */
+#posBtns{
+	height: 360px;
+	width: 750px;
+	margin-left: 125px;
+	margin-top: 40px;
+	position: absolute;
+	text-align: center;
+	vertical-align: center;
+}
+
+#btnFuncs{
+	height: 80px;
+	width: 362px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-size: 18px;
+	font-family: arial;
+}
+
+#centralAL{
+	width: 1000px;
+	height: 585px;
+	margin-top: 5px;
+}
