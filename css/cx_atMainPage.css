@@ -31,18 +31,14 @@
 }
 
 #btnFuncs{
-	height: 80px;
+	height: 225px;
 	width: 362px;
-	border-bottom-right-radius: 10px;
-	border-top-left-radius: 10px;
-	font-size: 18px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-top-right-radius: 50px;
+	font-size: 28px;
 	font-family: arial;
-}
-
-#centralAL{
-	width: 1000px;
-	height: 585px;
-	margin-top: 5px;
 }
 
 .mgLinhac{

@@ -2,11 +2,11 @@
 				Autor(es): Bruno Oliveira e Giovani Aparecido
 
 				Projeto..: Sistema para controle de Restuarante
-				Data.....: 08 de janeiro de 2013
-				Arquivo..: alMainPage.css
+				Data.....: 09 de janeiro de 2013
+				Arquivo..: adMainPage.css
 
 				Descrição: Folha de estilo com formatação da página
-				inicial do almoxarife
+				inicial do Administrador (aa)
  */
 
 /*  =========== Classes =========== */
@@ -39,9 +39,9 @@
 	font-family: arial;
 }
 
-#centralAL{
+#centralAD{
 	width: 1000px;
-	height: 585px;
+	height: 750px;
 	margin-top: 5px;
 }
 

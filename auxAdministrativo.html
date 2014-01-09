@@ -2,11 +2,11 @@
 				Autor(es): Bruno Oliveira e Giovani Aparecido
 
 				Projeto..: Sistema para controle de Restuarante
-				Data.....: 08 de janeiro de 2014
-				Arquivo..: almoxarife.html
+				Data.....: 09 de janeiro de 2014
+				Arquivo..: auxAdministrativo.html
 
 				Descrição: página inicial de acesso do sistema 
-				para o Almoxarifado
+				para o auxiliar Administrativo
 -->
 
 <DOCTYPE html>
@@ -17,7 +17,7 @@
 		
 		<!-- Ligação das folhas de estilo externas -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/alMainPage.css">
+		<link rel="stylesheet" type="text/css" href="css/aaMainPage.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 	</head>
@@ -29,12 +29,12 @@
 			<!-- Área de identificação da função do usuário -->
 			<div class="divFunc pos1">
 				<br />
-				<label class="identFunc">AL</label>
+				<label class="identFunc">AA</label>
 			</div>
 
 			<!-- Botões de acesso a home do usuário e configurações -->
 			<div class="mg_btns1 divButtom pos1">
-				<a href="almoxarife.html">
+				<a href="auxAdministrativo.html">
 					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
 				</a>
 			</div>
@@ -53,42 +53,44 @@
 		</header>
 
 		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
-		<article class="bg_mg bgop" id="centralAL">
+		<article class="bg_mg bgop" id="central">
 			<table id="posBtns">
 				<tr>
+					<td>
+						<input onClick=parent.location.href="solProduto.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produto"/>
+					</td>
+					
 					<td>
 						<input onClick=parent.location.href="listPedTrans.html" name="btnListPedTrans" id="btnFuncs" type="button" value="Lista de Pedidos para Transferencia"/>
 					</td>
 
+				</tr>
+				<tr>
 					<td>
 						<input onClick=parent.location.href="listProdGerDia.html" name="btnListProdGerDia" id="btnFuncs" type="button" value="Lista de Produtos Geral do Dia"/>
 					</td>
-				</tr>
-				<tr>
+					
 					<td>
 						<input onClick=parent.location.href="listProdGerSem.html" name="btnListProdGerSem" id="btnFuncs" type="button" value="Lista de Produtos Geral da Semana"/>
 					</td>
 
-					<td>
-						<input onClick=parent.location.href="solCompra.html" name="btnsolCompra" id="btnFuncs" type="button" value="Solicitar Compra"/>
-					</td>
 				</tr>
 
 				<tr>
+					<td>
+						<input onClick=parent.location.href="solCompra.html" name="btnsolCompra" id="btnFuncs" type="button" value="Solicitar Compra"/>
+					</td>
+					
 					<td>
 						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produto"/>
 					</td>
 
-					<td>
-						<input onClick=parent.location.href="cadFornecedor.html" name="btnCadForn" id="btnFuncs" type="button" value="Cadastrar Fornecedor"/>
-					</td>
 				</tr>
 
 				<tr>
 					<td>
-						<input onClick=parent.location.href="cadProduto.html" name="btnCadProd" id="btnFuncs" type="button" value="Cadastrar Produto"/>
+						<input onClick=parent.location.href="cadFornecedor.html" name="btnCadForn" id="btnFuncs" type="button" value="Cadastrar Fornecedor"/>
 					</td>
-
 					<td>
 						<input onClick=parent.location.href="consFornecedor.html" name="btnConsForn" id="btnFuncs" type="button" value="Consultar Fornecedor"/>
 					</td>
@@ -96,14 +98,17 @@
 				
 				<tr>
 					<td>
-						<input onClick=parent.location.href="consEstGeral.html" name="btnConsEstGeral" id="btnFuncs" type="button" value="Consultar Estoque Geral"/>
+						<input onClick=parent.location.href="cadProduto.html" name="btnCadProd" id="btnFuncs" type="button" value="Cadastrar Produto"/>
 					</td>
 
 					<td>
-						<input onClick=parent.location.href="consCompra.html" name="btnConsCompra" id="btnFuncs" type="button" value="Consultar Compra"/>
+						<input onClick=parent.location.href="consEstGeral.html" name="btnConsEstGeral" id="btnFuncs" type="button" value="Consultar Estoque Geral"/>
 					</td>
 				</tr>
 				<tr>
+					<td>
+						<input onClick=parent.location.href="consCompra.html" name="btnConsCompra" id="btnFuncs" type="button" value="Consultar Compra"/>
+					</td>
 					<td>
 						<input onClick=parent.location.href="cadProduto.html" name="btnCadProd" id="btnFuncs" type="button" value="Datas Entraga Fornecedor"/>
 					</td>
