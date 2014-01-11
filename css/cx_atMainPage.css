@@ -3,10 +3,10 @@
 
 				Projeto..: Sistema para controle de Restuarante
 				Data.....: 08 de janeiro de 2013
-				Arquivo..: alMainPage.css
+				Arquivo..: cx_atMainPage.css
 
 				Descrição: Folha de estilo com formatação da página
-				inicial do almoxarife
+				inicial do Caixa e Atendente
  */
 
 /*  =========== Classes =========== */
@@ -39,8 +39,4 @@
 	border-top-right-radius: 50px;
 	font-size: 28px;
 	font-family: arial;
-}
-
-.mgLinhac{
-	margin-left: 20px;
 }
