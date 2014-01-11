@@ -1,0 +1,214 @@
+<!-- 
+				Autor(es): Bruno Oliveira e Giovani Aparecido
+
+				Projeto..: Sistema para controle de Restuarante
+				Data.....: 10 de Dezembro de 2013
+				Arquivo..: gerente.html
+
+				Descrição: página inicial de acesso do sistema 
+				para o gerente.
+-->
+
+<DOCTYPE html>
+
+<html>
+	<head>
+
+		<title>Sistema - Restaurante</title>
+
+		<!-- Ligação das folhas de estilo externas -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
+		<link rel="stylesheet" type="text/css" href="css/geMainPage.css">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+	</head>
+
+	<body>
+
+		<!-- Cabeçalho do Sistema -->
+		<header class="imgHeader bg_mg bgop" id="header">
+			<!-- Área de identificação da função do usuário -->
+			<div class="divFunc pos1">
+				<br />
+				<label class="identFunc">GE</label>
+			</div>
+
+			<!-- Botões de acesso a home do usuário e configurações -->
+			<div class="mg_btns1 divButtom pos1">
+
+				<a href="gerente.html">
+					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
+				</a>
+
+			</div>
+
+			<div class="mg_btns2 divButtom pos1">
+
+				<a href="config.html">
+					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações" />
+				</a>
+
+			</div>
+
+			<!-- Área de identicação do usuário logado -->
+			<div class="divIdent pos2">
+				<label class="lblUser">Nome com ate 30 caracteres</label><br />
+				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			</div>
+		</header>
+
+		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
+		<article class="bg_mg bgop" id="centralGE">
+			<table id="posBtns">
+				<tr>
+					<td>
+						<input onClick=parent.location.href="cadFunc.html" name="btnCadFunc" id="btnFuncs" type="button" value="Cadastrar Funcionario"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="cadCargo.html" name="btnCadCargo" id="btnFuncs" type="button" value="Cadastrar Cargo"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="cadClasProd.html" name="btnCadClasProd" id="btnFuncs" type="button" value="Cadastrar Classificação de Produtos"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="cadPrato.html" name="btnCadPrato" id="btnFuncs" type="button" value="Cadastrar Prato"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="cadCard.html" name="btnCadCard" id="btnFuncs" type="button" value="Cadastrar Cardápio"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="consPrato.html" name="btnConsPrato" id="btnFuncs" type="button" value="Consultar Pratos"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consCard.html" name="btnConsCard" id="btnFuncs" type="button" value="Consultar Cardápio"/>
+					</td>
+				
+					<td>
+						<input onClick=parent.location.href="consSubEst.html" name="btnConsSE" id="btnFuncs" type="button" value="Consultar Sub-Estoque"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produtos"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="consDia.html" name="btnConsDia" id="btnFuncs" type="button" value="Consultar Produtos por Dia"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consSem.html" name="btnConsSem" id="btnFuncs" type="button" value="Consultar Produtos por Semana"/>
+					</td>
+				
+					<td>
+						<input onClick=parent.location.href="listProdDia.html" name="btnListProdDia" id="btnFuncs" type="button" value="Lista de Produtos do dia"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="listProducao.html" name="btnListProducao" id="btnFuncs" type="button" value="Lista de Producao"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="listPedTrans.html" name="btnListPedTrans" id="btnFuncs" type="button" value="Lista de Pedidos para Transferencia"/>
+					</td>
+					
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="listProdGerDia.html" name="btnListProdGerDia" id="btnFuncs" type="button" value="Lista de Produtos Geral do Dia"/>
+					</td>
+
+					<td>
+						<input onClick=parent.location.href="listProdGerSem.html" name="btnListProdGerSem" id="btnFuncs" type="button" value="Lista de Produtos Geral da Semana"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="solCompra.html" name="btnsolCompra" id="btnFuncs" type="button" value="Solicitar Compra"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produto"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="cadFornecedor.html" name="btnCadForn" id="btnFuncs" type="button" value="Cadastrar Fornecedor"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="cadProduto.html" name="btnCadProd" id="btnFuncs" type="button" value="Cadastrar Produto"/>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consFornecedor.html" name="btnConsForn" id="btnFuncs" type="button" value="Consultar Fornecedor"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="consEstGeral.html" name="btnConsEstGeral" id="btnFuncs" type="button" value="Consultar Estoque Geral"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consCompra.html" name="btnConsCompra" id="btnFuncs" type="button" value="Consultar Compra"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="cadProduto.html" name="btnCadProd" id="btnFuncs" type="button" value="Datas Entraga Fornecedor"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consEmpresa.html" name="btnConsEmpresa" id="btnFuncs" type="button" value="Consultar Empresa"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="consCargo.html" name="btnConsCargo" id="btnFuncs" type="button" value="Consultar Cargo"/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td>
+						<input onClick=parent.location.href="consFuncionario.html" name="btnConsFuncionario" id="btnFuncs" type="button" value="Consultar Funcionario"/>
+					</td>
+					
+					<td>
+						<input onClick=parent.location.href="consClasProd.html" name="btnConsClasProd" id="btnFuncs" type="button" value="Consultar Classificacao de Produto"/>
+					</td>
+				</tr>
+			</table>
+		</article>
+
+		<!-- Rodapé do sistema -->
+		<footer class="bg_mg" id="footer">
+
+		</footer>
+
+	</body>
+
+</html>
