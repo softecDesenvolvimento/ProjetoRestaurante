@@ -1,0 +1,153 @@
+/*						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTORES..: Bruno Oliveira e GIOVANI APARECIDO== -->
+						<!-- == DATA.....: 12 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               		 == -->
+						<!-- == VERSÃO...: 0.1 Beta							 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: cozinheiro.html   				 == -->
+						<!-- == ALTERAÇÃO: 13/01/14							 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
+						<!-- == da página do cozinheiro, auxiliar do 		 == -->
+						<!-- == cozinheiro, saladeiro e auxiliar do saladeiro== -->
+						<!-- == com acesso as funcionalidades disponíveis ao == -->
+						<!-- == cargo.                                       == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
+
+/*  =========== Classes =========== */
+
+.identFunc{
+	font-size: 50px;
+	color: white;
+	font-family: arial;
+	margin-left: 35px;
+	opacity: 1.8;
+}
+
+/*  ===========   ID's  =========== */
+#posBtns{
+	height: 360px;
+	width: 750px;
+	margin-left: 125px;
+	margin-top: 40px;
+	position: absolute;
+	text-align: center;
+	vertical-align: center;
+}
+
+#btnFuncs{
+	height: 80px;
+	width: 362px;
+	border-bottom-right-radius: 10px;
+	border-top-left-radius: 10px;
+	font-size: 18px;
+	font-family: arial;
+}
+
+
+
+/* ===================== Div Cargos ======================= */
+#cargoLog{
+	/* Tamanho */
+	height: 50px;
+	width: 276px;
+
+	/* Efeitos */
+	border-radius: 0px 0px 20px 20px;
+	background-color: black;	
+	opacity: 0.8;
+
+	/* Posicionamento */
+	position: absolute;
+	float: left;
+}
+
+.lblCargo{
+	/* Formatação */
+	color: white;
+	font: 22px arial;
+	letter-spacing: 1px;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+/* ========== Div central com botões de acesso ============ */
+
+#orgBtn{
+	/* Tamanho */
+	height: 400px;
+	width: 1000px;
+
+	/* Efeitos */
+	background-color: black;
+	border-radius: 20px;
+	opacity: 0.8;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -190px;
+}
+
+.btnFunc{
+	/* Tamanho */
+	height: 199px;
+	width: 248px;
+	
+	/* Tamanho da fonte */
+	font-size: 18px;
+
+	/* Efeitos */
+	border-style: solid;
+	border-width: thin;
+	border-color: lightblue;
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+}
+
+.btnFunc:hover{
+	background-color: gray;
+}
+
+/* Efeito Visual */
+
+.effect{
+	/* Tamanho */
+	height: 36px;
+	width: 110px;
+
+	/* Efeitos */
+	border-radius: 15px;
+
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+	margin-top: 12px;
+	margin-left: 17px;
+}
+
+.color1{
+	/* Efeitos */
+	background-color: darkblue;
+}
+
+.color2{
+	/* Efeitos */
+	background-color: lightblue;
+}
+
+.positionFunc{
+	margin-bottom: 10px;
+	
+}

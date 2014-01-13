@@ -1,67 +1,131 @@
-<!-- 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 01 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: login.html 											 == -->
+						<!-- == ALTERAÇÃO: 03/01/14													 == -->
+						<!-- == DESCRIÇÃO: Página de login de usuário para o == -->
+						<!-- == acesso a página inicial conforme cadastro do == -->
+						<!-- == usuário e sua função.                        == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 22 de Dezembro de 2013
-				Arquivo..: login.html
-
-				Descrição: página de login do sistema
--->
-
-<DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html>
+	<!-- Cabeçalho da página -->
 	<head>
-		<title>.:: Login ::. - Sistema de Restaurante</title>
 
-		<link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+		<!-- Título e Ícone da página -->
+		<title>Login - .:: Sistema de Gestão OnGR ::.</title>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Link para folhas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/loginStyle.css" />
 
+		<!-- Link para arquivo de funções em javascript -->
+
+		<!-- Padrão de codificação de caracteres -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+		<!-- Padronização para outras resoluções -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
 	</head>
 
+	<!-- Corpo da página -->
 	<body>
-		<div class="bgColor">
-			<br />
-			<div class="titleArea">
-				<br />
-				<label class="titleSystem">Sistema de Controle de Restaurante</label>
+
+		<!-- Cabeçalho do Sistema -->
+		<header id="header">
+			<label class="lblTitle">Sistema de Gestão OnGR</label>
+			<div class="effect color1"></div>
+			<div class="effect color2"></div>
+			<div class="effect color3"></div>
+			<div class="effect color4"></div>
+			<div class="effect color5"></div>
+			
+		</header>
+
+		<!-- Área central da página de Login -->
+		<article id="central">
+
+			<!-- Título Login -->
+			<div id="titleLogin">
+				<label class="lblLogin">LOGIN</label>
 			</div>
-			<div class="loginArea">
-				<br />
 
-				<table class="tabelaOrg">
+			<div id="centralArea">
 
-					<tr>
-						<td class="lblText linha">
-							<label>Usuário:</label>
-						</td>
-						<td class="txbAlign">
-							<input class="textArea" name="txbUser" type="text">
-						</td>
-					</tr>
+				<div id="errorLogin">
+					<div class="icon">
+						<img class="error" src="imgs/icons/iconError.png">
+					</div>
+					<label class="message">Usuário e/ou Senha Inválidos!</label>
+				</div>
 
-					<tr>
-						<td class="lblText linha">
-							<label>Senha:</label>
-						</td>
-						<td class="txbAlign">
-							<input class="textArea" name="txbUser" type="password">
-						</td>
-					</tr>
+				<div class="loginArea">
 
-					<tr>
-						<td class="txbAlign" colspan="2">
-							<a href="">Esqueceu sua senha?</a>
-							<input class="btnLog" type="submit" name="btnLogin" value="Entrar" onClick=parent.location.href="nutricionista.html">
-						</td>
-					</tr>
+					<form class="frmLogin">
 
-				</table>
+						<table class="login">
 
-			</div>
-		</div>
+							<tr class="tblLine">
+								<td class="tblCol">
+									<label class="lblForm">Usuário:</label>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input class="txbForm" name="txbUser" type="text" />
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<label class="lblForm">Senha:</label>
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input class="txbForm" name="txbPass" type="password" />
+								</td>
+							</tr>
+
+							<tr>
+								<td>
+									<input name="cbxRemember" type="checkbox" />
+									Lembrar-me
+									<input class="btnLogin" name="btnLogin" type="submit" value="Entrar" />
+								</td>
+							</tr>
+
+						</table>
+
+					</form>
+
+				</div>
+
+				<div class="recPass">
+					<label class="lblRecPass">Esqueci minha senha!</label>
+				</div>
+
+			</div>		
+
+		</article>
+
+
+		<!-- Rodapé do Sistema -->
+		<footer id="footer">
+			<label class="developers">SOFTEC Desenvolvimento MEI</label>
+		</footer>
+
 	</body>
 
 </html>
