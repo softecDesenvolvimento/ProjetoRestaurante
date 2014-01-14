@@ -7,7 +7,8 @@
 						<!-- == VERSÃO...: 0.1 Beta							 == -->
 						<!-- == ============================================ == -->
 						<!-- == ARQUIVO..: auxCozinheiro.html   		     == -->
-						<!-- == DESCRIÇÃO: Página inicial do almoxarife com   == --> 
+						<!-- == ALTERADO.: 14 Janeiro de 2914                == -->
+						<!-- == DESCRIÇÃO: Página inicial do almoxarife com  == --> 
 						<!-- == acesso as funcionalidades disponíveis ao     == -->
 						<!-- == cargo.                                       == -->
 						<!-- ================================================== -->
@@ -23,10 +24,12 @@
 		
 		<!-- Link para folhas de estilo -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
-		<link rel="stylesheet" type="text/css" href="css/nutricionistaStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/almoxarifeStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/funcaoCentral.css" />
 
 		<!-- Link para arquivo de funções em javascript -->
-
+		<script type="text/javascript" src="javascript/almoxarifeScript.js"></script>
+		
 		<!-- Padrão de codificação de caracteres -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -50,24 +53,50 @@
 			<div class="btnHeader posRig">
 				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
 			</div>
-			<div class="btnHeader posRig">
+			<div class="btnHeader posRig" onclick=parent.location.href="almoxarife.html">
 				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
 			</div>
 		</header>
 
 		<!-- Área central da página do almoxarife -->
 		<article id="central">
+			
 			<!-- Identificação do cargo -->
 			<div id="cargoLog">
 				<label class="lblCargo" for="cargo">ALMOXARIFE</label>
 			</div>
 
 			<!-- Botões de acesso a funções do sistema -->
-			<div id="orgBtn">
 			
-			<!--Funções do almoxarife virão aqui-->
+			<!-- Página Principal-->
+			<div class="orgBtnCentral" id="principal">
+				<div class="btnFuncMaior" onClick=divVisible(lista); >Listar e Solicitar</div>
+				<div class="btnFuncMaior" onClick=divVisible(cadastro); >Cadastrar</div>
+				<div class="btnFuncMaior" onClick=divVisible(consulta); >Consultar</div>
+				<div class="btnFuncMaior" onClick=parent.location.href=".html">Datas Entrega Fornecedor</div>
+			</div>
 			
+			<!-- Acesso a Página de Listas e Solicitações-->
+			<div class="orgBtnCentral" id="lista">
+				<div class="btnFuncMedio">Lista de Pedidos para transferência</div>
+				<div class="btnFuncMedio">Lista de Produtos Geral do Dia</div>
+				<div class="btnFuncMedio">Lista de Produtos Geral da Semana</div>
+				<div class="btnFuncMedio">Solicitar Compra</div>
+				<div class="btnFuncMedio">Solicitar Produto</div>
+			</div>
 			
+			<!-- Acesso a Página de Cadastro-->
+			<div class="orgBtnCentral" id="cadastro">
+				<div class="btnFuncMaior">Cadastrar Fornecedor</div>
+				<div class="btnFuncMaior">Cadastrar Produto</div>
+				
+			</div>
+			
+			<!-- Acesso a Página de Consultas-->
+			<div class="orgBtnCentral" id="consulta">				
+				<div class="btnFuncMaior">Consultar Fornecedor</div>
+				<div class="btnFuncMaior">Consultar Estoque Geral</div>
+				<div class="btnFuncMaior">Consultar Compra</div>
 			</div>
 		</article>
 

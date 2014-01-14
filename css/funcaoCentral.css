@@ -1,18 +1,15 @@
 /*						<!-- ================================================== -->
 						<!-- ================================================== -->
 						<!-- == AUTORES..: Bruno Oliveira e GIOVANI APARECIDO== -->
-						<!-- == DATA.....: 12 de Janeiro de 2014             == -->
+						<!-- == DATA.....: 14 de Janeiro de 2014             == -->
 						<!-- == ============================================ == -->
 						<!-- == PROJETO..: Sistema OnGR               		 == -->
 						<!-- == VERSÃO...: 0.1 Beta							 == -->
 						<!-- == ============================================ == -->
-						<!-- == ARQUIVO..: cozinhaStyle.css   				 == -->
-						<!-- == ALTERAÇÃO: 13/01/14							 == -->
+						<!-- == ARQUIVO..: funcaoCentral.css 				 == -->
 						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
-						<!-- == da página do cozinheiro, auxiliar do 		 == -->
-						<!-- == cozinheiro, saladeiro e auxiliar do saladeiro== -->
-						<!-- == com acesso as funcionalidades disponíveis ao == -->
-						<!-- == cargo.                                       == -->
+						<!-- == da página padrão  de todas as divs de botões == -->
+						<!-- == das Funções de cada usuário.				 == -->
 						<!-- ================================================== -->
 						<!-- ================================================== -->
 */
@@ -149,5 +146,4 @@
 
 .positionFunc{
 	margin-bottom: 10px;
-	
 }

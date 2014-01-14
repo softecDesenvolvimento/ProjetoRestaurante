@@ -1,0 +1,92 @@
+/*						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTORES..: Bruno Oliveira e GIOVANI APARECIDO== -->
+						<!-- == DATA.....: 14 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               		 == -->
+						<!-- == VERSÃO...: 0.1 Beta							 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: almoxarifeStyle.css 				 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
+						<!-- == da página do almoxarife com acesso as        == -->
+						<!-- == funcionalidades disponíveis ao cargo.        == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
+
+/* ========== Div central com botões de acesso ============ */
+
+.orgBtnCentral{
+	/* Tamanho */
+	height: 400px;
+	width: 1000px;
+
+	/* Efeitos */
+	background-color: black;
+	border-radius: 20px;
+	opacity: 0.8;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -190px;
+}
+
+#lista{
+	visibility: hidden;
+}
+
+#cadastro{
+	visibility: hidden;
+}
+
+#consulta{
+	visibility: hidden;
+}
+
+.btnFuncMedio{
+	/* Tamanho */
+	height: 199px;
+	width: 330px;
+	
+	/* Tamanho da fonte */
+	font-size: 18px;
+
+	/* Efeitos */
+	border-style: solid;
+	border-width: thin;
+	border-color: lightblue;
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+}
+
+.btnFuncMedio:hover{
+	background-color: gray;
+}
+
+
+.btnFuncMaior{
+	/* Tamanho */
+	height: 199px;
+	width: 496px;
+	
+	/* Tamanho da fonte */
+	font-size: 18px;
+
+	/* Efeitos */
+	border-style: solid;
+	border-width: thin;
+	border-color: lightblue;
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+}
+
+.btnFuncMaior:hover{
+	background-color: gray;
+}
