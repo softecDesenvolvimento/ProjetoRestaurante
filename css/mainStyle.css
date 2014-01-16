@@ -1,137 +1,174 @@
-/* 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+/*					<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 01 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: mainStyle.css										 == -->
+						<!-- == ALTERAÇÃO: 03/01/14													 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com a formatação  == -->
+						<!-- == geral do sistema.                            == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 18 de Dezembro de 2013
-				Arquivo..: mainStyle.css
+/* ==================== Formatação Geral ========================== */
 
-				Descrição: Folha de estilo base da estrutura do
-				sistema
- */
-
-/* === Formatação Geral por Tag === */
-body{
-	background-color: black;
+/* ============ ID's de Formatação ============ */
+html, body{
+	height: 99%;
+	min-height: 99%;
+	background-color: lightblue;
 }
-
-/*  =========== Classes =========== */
-
-/* Geral */
-.bg_mg{ /* Cores e Margem das Divs Principais */
-	background-color: white;
-	margin-left: 5px;
-}
-
-.bgop{ /* Opacidade das divs Header e Central */
-	opacity: 0.9;
-}
-
-.imgHeader{
-	background: url("imgs/header.jpg");
-	height: 120px;
-	width: 1000px;
-	opacity: 0.7;
-}
-
-.mg_btns1{ /* Margem entre div de função e botões do cabeçalho */
-	margin-left: 360px;
-}
-
-.mg_btns2{ /* Margem entre botões do cabeçalho */
-	margin-left: 10px;
-}
-
-/* Botões de acesso do cabeçalho */
-.divButtom{
-	border-radius: 100%;
-	background-color: orange;
-	width: 50px;
-	height: 50px;
-	margin-top: 35px;
-}
-
-.divButtom:hover{
-	background-color: green;
-}
-
-/* Área de indicação da função do funcionário */
-.divFunc{
-	background-color: black;
-	width: 15%;
-	height: 100%;
-	border-bottom-right-radius: 100px;
-	border-top-left-radius: 25px;
-	opacity: 0.95;
-}
-
-/* Área de identificação do usuário logado */
-.divIdent{
-	background-color: black;
-	width: 340px;
-	height: 80px;
-	margin-top: 20px;
-	margin-right: 20px;
-	opacity: 0.9;
-	border-bottom-left-radius: 50px;
-	border-top-left-radius: 50px;
-}
-
-.lblUser{
-	margin-top:12px;
-	margin-right: 40px;
-	float: right;
-	color: white;
-	font-size: 18px;
-}
-
-.btnLogout{
-	margin-top: 6px;
-	font-size: 16px;
-	width: 80px;
-	height: 25px;
-	margin-left: 220px;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-}
-
-/* Posicionamento dos divs do cabeçalho */
-.pos1{
-	float: left;
-}
-
-.pos2{
-	float: right;
-}
-
-/* ========== ID das Tags ========== */
 
 /* Cabeçalho */
 #header{
-	width: 1000px;
-	height: 120px;
-	border-top-left-radius: 25px;
-}
+	/* Tamanho */
+	height: 60px;
+	width:  100%;
 
-/* Área central */
-#central{
-	width: 1000px;
-	height: 440px;
-	margin-top: 5px;
-}
+	min-width: 1000px;
+	min-height: 60px;
 
-/* Rodapé */
-#footer{
-	width: 1000px;
-	height: 20px;
+	/* Efeitos */
+	background-color: black;
+	border-radius: 10px 10px 10px 0px;
 	opacity: 0.8;
-	border-bottom-right-radius: 25px;
+}
+
+/* Área Central */
+#central{
+	/* Tamanho */
+	height: 84%;
+	width: 100%;
+
+	min-height: 400px;
+	min-width: 1000px;
+}
+
+/* Rodapé do sistema */
+#footer{
+	/* Tamanho */
+	height: 30px;
+	width:  100%;
+
+	min-width: 1000px;
+	min-height: 30px;
+
+	/* Efeitos */
+	background-color: black;
+	border-radius: 10px;
+	opacity: 0.8;
+
 	position: relative;
 }
 
-/* ===== Formatação das imagens ===== */
+/* ============ Class de Formatação =========== */
 
-/* Ícones dos botões do cabeçalho */
-.btnMain{
-	height: 100%;
-	width: 100%;
+.developers{
+	/* Formatação */
+	font-family: Arial;
+	font-size: 12px;
+	color: white;
+	letter-spacing: 2px;
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+	margin-top: 6px;
+	left: 40%;
+}
+
+
+/* ============= Páginas Iniciais dos Cargos - HEADER ============== */
+
+/* Posicionamento geral das div
+do cabeçalho                    */
+.posRig{
+	/* Posicionamento */
+	float: right;
+}
+
+/* Botão sair */
+.btnExit{
+	/* Tamanho */
+	height: 60px;
+	width: 100px;
+
+	/* Formatação */
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 2px;
+
+	/* Efeitos */
+	background-color: black;
+	border-right: thin solid lightblue;
+	border-left: thin solid lightblue;
+
+	/* Posicionamento */
+	margin-right: 20px;
+}
+
+.btnExit:hover{
+	background-color: gray;
+	color: black;
+}
+
+.lblExit{
+	/* Posicionamento */
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 32px;
+}
+
+/* Área de Identificação do usuário */
+.identify{
+	/* Tamanho */
+	height: 60px;
+	width: 400px;
+
+	/* Formatação */
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 2px;
+
+	/* Efeitos */
+	background-color: black;
+	border-left: thin solid lightblue;
+}
+
+.lblIdentify{
+	/* Posicionamento */
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 20px;
+}
+
+/* Botões Home e Config */
+.btnHeader{
+	/* Tamanho */
+	height: 60px;
+	width: 100px;
+
+	/* Efeitos */
+	background-color: lightblue;
+	border-left: thin solid black;
+}
+
+.btnHeader:hover{
+	background-color: gray;
+}
+
+/* Ícones dos botões - HEADER */
+.iconHeader{
+	/* Tamanho */
+	height: 50px;
+	width: 50px;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 25px;
 }

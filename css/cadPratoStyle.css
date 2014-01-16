@@ -1,153 +1,545 @@
-/* Área central */
-#centralCad{
-	width: 1000px;
-	height: 640px;
-	margin-top: 5px;
+/*					<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 01 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: cadPratoStyle.css								 == -->
+						<!-- == ALTERAÇÃO: 03/01/14													 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
+						<!-- == da página de cadastro de pratos.             == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
+
+/* Div com título da página */
+#titlePage{
+	/* Tamanho */
+	width: 100px;
+	height: 300px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 0px 0px 10px 10px;
+
+	/* Posicionamento */
+	position: absolute;
+	float: left;
 }
 
-.cadProgress{
-	width: 800px;
-	height: 100px;
-	margin-left: 100px;
-	border-radius: 20px;
+/* Label de Título - Cadastro de Pratos */
+.lblTitle{
+	/* Formatação */
+	font-size: 30px;
+	font-family: Arial;
+	color: white;
+	letter-spacing: 1px;
+
+	/* Posicionamento do texto */
+	writing-mode:tb-rl;
+	-webkit-transform:	rotate(270deg);
+	-moz-transform:			rotate(270deg);
+	-o-transform:				rotate(90deg);
+	white-space:nowrap;
+	display:block;
+
+	/* Posição na div */
+	margin-top: 212px;
+}
+
+/* Área de identificação do passo do usuário
+	 Progresso do cadastro */
+#orgProgress{
+	/* Tamanho */
+	height: 80px;
+	width: 88%;
+	min-width: 900px;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 110px;
+	margin-top: 20px;
+}
+
+/* Ícone de Número do Passo */
+
+.numberLeft{
+	/* Tamanho */
+	height: 70px;
+	width: 60px;
+
+	/* Efeitos */
+	opacity: 0.8;
+	border-radius: 10px 10px 0px 10px;
+	background-color: black;
+
+	/* Posicionamento */
+	float: left;
+	margin-top: 5px;
+	margin-left: calc(50% - 420px);
 }
 
 .number{
-	margin-top: 20px;
-	height: 60px;
+	/* Tamanho */
+	height: 70px;
 	width: 60px;
-	border-radius: 100%;
-	float: left;
-	background-color: gray;
-	text-align: center;
-}
 
-.number1{
-	margin-top: 20px;
-	height: 60px;
-	width: 60px;
-	border-radius: 100%;
-	float: left;
-	background-color: orange;
-	text-align: center;
-}
-
-.posProgress{
-	font-size: 45px;
-	font-family: Arial;
-	color: white;
-	position: absolute;
-	margin-top: 5px;
-	margin-left: -12px;
-}
-
-.posProgress2{
-	font-size: 35px;
-	font-family: Arial;
-	color: white;
-	position: absolute;
-	margin-top: 8px;
-	margin-left: -26px;
-}
-
-.bar{
-	margin-top: 44px;
-	height: 12px;
-	width: 186px;
-	background-color: gray;
-	float: left;
-}
-
-.textIdent{
-	margin-left: 2px;
-	margin-top: 25px;
-	position: absolute;
-}
-
-.frmIdentif{
-	height: 500px;
-	width: 700px;
+	/* Efeitos */
+	border-radius: 10px 10px 0px 0px;
+	opacity: 0.8;
 	background-color: black;
-	margin-left: 150px;
-	margin-top: 10px;
-	opacity: 0.85;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	position: absolute;
-	overflow: auto;
-	visibility: hidden;
+
+	/* Posicionamento */
+	float: left;
+	margin-top: 5px;
 }
 
-.frmIngred{
-	height: 500px;
-	width: 700px;
-	background-color: red;
-	margin-left: 150px;
-	margin-top: 10px;
-	opacity: 0.9;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	position: absolute;
-	visibility: hidden;
-	overflow: auto;
+.nbr{
+	/* Efeitos */
+	border-radius: 10px 10px 10px 0px;
 }
 
-.frmPreparo{
-	height: 500px;
-	width: 700px;
-	background-color: yellow;
-	margin-left: 150px;
-	margin-top: 10px;
-	opacity: 0.9;
-	border-bottom-right-radius: 20px;
-	border-top-left-radius: 20px;
-	position: absolute;
-	visibility: hidden;
-	overflow: auto;
+/* Barra de progresso */
+.bar{
+	/* Tamanho */
+	height: 25px;
+	width: 200px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+
+	/* Posicionamento */
+	float: left;
+	margin-top: 50px;
 }
 
-.tabFormIdent{
-	height: 400px;
-	width: 600px;
-	margin-left: 50px;
+/* Número do passo */
+.lblNumber{
+	/* Formatação */
+	font: 40px Arial;
 	color: white;
-	font-size: 18px;
-	font-family: arial;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 20px;
+	margin-top: 9px;
 }
 
-.divNextBack{
+.lblOk{
+	/* Formatação */
+	font: 30px Arial;
+	color: white;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 16px;
+}
+
+/* Nome do Passo */
+.lblPass{
+	/* Formatação */
+	font: 19px Arial;
+	letter-spacing: 2px;
+	color: white;
+}
+
+/* Área de cadastro do prato - DIV Central */
+
+/* Área Central */
+#central{
+	/* Tamanho */
+	height: 100%;
+	width: 100%;
+
+	min-height: 400px;
+	min-width: 1000px;
+}
+
+/* Posição do form */
+#frmCadPrato{
+	/* Tamanho */
+	height: 500px;
+	width: 650px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 180px;
+	left: calc(50% - 280px);
+}
+
+/* Posição do form */
+#frmCadPrato2{
+	/* Tamanho */
+	height: 500px;
+	width: 800px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+	visibility: hidden;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 180px;
+	left: calc(50% - 345px);
+}
+
+#frmCadPrato3{
+	/* Tamanho */
+	height: 500px;
+	width: 650px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 10px;
+	visibility: hidden;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 180px;
+	left: calc(50% - 280px);
+}
+
+#regSucess{
+	/* Tamanho */
+	height: 400px;
+	width: 650px;
+
+	/* Efeitos */
+	opacity: 0.8;
+	border-radius: 10px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 180px;
+	left: calc(50% - 280px);
+}
+
+
+
+/* ========= Tabela de organização dos componentes ======== */
+.orgForm{
+	/* Tamanho */
+	height: 300px;
+	width: 560px;
+
+	/* Formatação */
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 1px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 55px;
+	left: 20px;
+}
+
+.line{
+	/* Tamanho */
 	height: 50px;
-	width: 700px;
-	background-color: orange;
-	margin-top: 20px;
 }
 
 .colLbl{
-	width: 250px;
-	height: 38px;
+	/* Tamanho */
+	width: 200px;
+
+	/* Formatação */
 	text-align: right;
+	padding-right: 20px;
 }
 
-.colTxb{
-	width: 450px;
-	height: 38px;
-}
-
-.txbForm{
-	height: 30px;
+.colComp{
+	/* Tamanho */
 	width: 350px;
+
+	/* Formatação */
+	text-align: left;
+}
+
+.component{
+	/* Tamanho */
+	width: 98%;
+	height: 25px;
+
+	/* Formatação */
+	font: 18px Arial;
+	letter-spacing: 1px;
+	padding-left: 2px;
+
+	/* Efeitos */
 	border-radius: 10px;
-	margin-left: 10px;
-	font-size: 16px;
+}
+
+.component2{
+	/* Tamanho */
+	width: 100%;
+	height: 28px;
+
+	/* Formatação */
+	font: 18px Arial;
+	letter-spacing: 1px;
+	padding-left: 1px;
+
+	/* Efeitos */
+	border-radius: 10px;
+}
+
+/* Div com botões de avançar e voltar entre as divs */
+.divBtns{
+	/* Tamanho */
+	height: 60px;
+	width: 100%;
+
+	/* Efeitos */
+	background-color: orange;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 85%;
 }
 
 .btnNext{
+	/* Tamanho */
 	height: 40px;
 	width: 100px;
-	font-size: 16px;
+
+	/* Efeitos */
+	border-radius: 0px 20px 20px 0px;
+
+	/* Posicionamento */
+	position: absolute;
 	float: right;
-	margin-top: 5px;
-	margin-right: 105px;
-	border-bottom-right-radius: 20px;
-	border-top-right-radius: 20px;
+	top: 10px;
+	right: 70px;
+}
+
+.btnBack{
+	/* Tamanho */
+	height: 40px;
+	width: 100px;
+
+	/* Efeitos */
+	border-radius: 20px 0px 0px 20px;
+
+	/* Posicionamento */
+	position: absolute;
+	float: right;
+	top: 10px;
+	right: 170px;
+}
+
+/* ===== Div de Ingredientes ====== */
+
+.orgForm2{
+	/* Tamanho */
+	height: 80%;
+	width: 80%;
+
+	/* Formatação */
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 1px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 5%;
+	left: 10%;
+}
+
+.fntSize{
+	font: 18px Arial;
+}
+
+.txbIngred{
+	width: 220px;
+	height: 20px;
+	margin-right: 34px;
+	margin-left: 20px;
+	border-radius: 20px;
+}
+
+.txbObs{
+	width: 152px;
+	height: 20px;
+	border-radius: 20px;
+}
+
+.txbUnid{
+	width: 50px;
+	height: 20px;
+	margin-right: 8px;
+	border-radius: 20px;
+}
+
+.txbUnid2{
+	width: 50px;
+	height: 20px;
+	margin-right: 8px;
+	margin-left: 13px;
+	border-radius: 20px;
+}
+
+.btnAdd{
+	/* Tamanho */
+	height: 40px;
+	width: 152px;
+
+	border-radius: 20px;
+
+	float: right;
+	margin-right: 125px;
+}
+
+.btnErase{
+	margin-right: 10px;
+}
+
+#tableList{
+	width: 100%;
+	height: 40%;
+	overflow: auto;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 300px;
+}
+
+.list{
+	width: 100%;
+	color: white;
+	border-color: white;
+	border-collapse: collapse;
+}
+
+th{
+	background-color: orange;
+}
+
+.colCheck{
+	width: 40px;
+	text-align: center;
+}
+
+.colTexts{
+	width: 200px;
+	padding: 8px;
+}
+
+.colMed{
+	width: 60px;
+	padding: 8px;
+	text-align: center;
+}
+
+.orgForm3{
+	height: 400px;
+	width: 600px;
+
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 1px;
+
+	position: absolute;
+	left: 25px;
+	top: 10px;
+}
+
+.txbModPrep{
+	height: 220px;
+	width: 580px;
+	border-radius: 20px;
+	font: 18px Arial;
+	letter-spacing: 1px;
+	padding: 10px;
+}
+
+.txbsMod{
+	width: 50px;
+	border-radius: 10px;
+	font: 18px Arial;
+	letter-spacing: 1px;
+	padding: 4px;
+}
+
+.regMens{
+	/* Tamanho */
+	height: 150px;
+	width: 100%;
+
+	background-color: black;
+	border-radius: 10px;
+}
+
+.btnAcess{
+	/* Tamanho */
+	height: 248px;
+	width: 214px;
+
+	background-color: black;
+	border-radius: 10px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 152px;
+	float: left;
+}
+
+.btnAcess:hover{
+	background-color: gray;
+}
+
+.dist{
+	margin-left: 218px;
+}
+
+.dist2{
+	margin-left: 436px;
+}
+
+.iconBtn{
+	height: 80px;
+	width: 80px;
+
+	position: absolute;
+	top: 30px;
+	left: 70px;
+}
+
+.nameBtn{
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 2px;
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
+
+.posTxt1{
+	left: 25px;
+}
+
+.posTxt2{
+	left: 30px;
+}
+
+.txtMens{
+	font: 18px Arial;
+	color: white;
+	letter-spacing: 2px;
+
+	position: absolute;
+	top: 60px;
+	left: 125px;
 }

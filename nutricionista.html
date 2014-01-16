@@ -1,113 +1,122 @@
-<!-- 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 02 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: nutricionista.html   						 == -->
+						<!-- == ALTERAÇÃO: 05/01/14													 == -->
+						<!-- == DESCRIÇÃO: Página inicial do nutricionista   == -->
+						<!-- == com acesso as funcionalidades disponíveis ao == -->
+						<!-- == cargo.                                       == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 18 de Dezembro de 2013
-				Arquivo..: nutricionista.html
-
-				Descrição: página inicial de acesso do sistema 
-				para o nutricionista
--->
-
-<DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html>
+	<!-- Cabeçalho da página -->
 	<head>
 
-		<title>Sistema - Restaurante</title>
+		<!-- Título e Ícone da página -->
+		<title>Nutricionista - .:: Sistema de Gestão OnGR ::.</title>
 
-		<!-- Ligação das folhas de estilo externas -->
-		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/ntMainPage.css">
+		<!-- Link para folhas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/nutricionistaStyle.css" />
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Link para arquivo de funções em javascript -->
+
+		<!-- Padrão de codificação de caracteres -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+		<!-- Padronização para outras resoluções -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
 	</head>
 
+	<!-- Corpo da página -->
 	<body>
 
 		<!-- Cabeçalho do Sistema -->
-		<header class="imgHeader bg_mg bgop" id="header">
-			<!-- Área de identificação da função do usuário -->
-			<div class="divFunc pos1">
-				<br />
-				<label class="identFunc">NT</label>
+		<header id="header">
+			<div class="effect color1"></div>
+			<div class="effect color2"></div>
+
+			<div class="btnExit posRig">
+				<label class="lblExit">Sair</label>
 			</div>
-
-			<!-- Botões de acesso a home do usuário e configurações -->
-			<div class="mg_btns1 divButtom pos1">
-
-				<a href="nutricionista.html">
-					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
-				</a>
-
+			<div class="identify posRig">
+				<label class="lblIdentify">Bruno Luiz de Oliveira</label>
 			</div>
-
-			<div class="mg_btns2 divButtom pos1">
-
-				<a href="config.html">
-					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações" />
-				</a>
-
+			<div class="btnHeader posRig">
+				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
 			</div>
-
-			<!-- Área de identicação do usuário logado -->
-			<div class="divIdent pos2">
-				<label class="lblUser">Nome com ate 30 caracteres</label><br />
-				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			<div class="btnHeader posRig" onclick="location.href='nutricionista.html';">
+				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
 			</div>
 		</header>
 
-		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
-		<article class="bg_mg bgop" id="central">
-			<table id="posBtns">
+		<!-- Área central da página de Login -->
+		<article id="central">
 
-				<tr>
-					<td>
-						<input onClick=parent.location.href="cadPrato.html" name="btnCadPrato" id="btnFuncs" type="button" value="Cadastrar Prato"/>
-					</td>
+			<!-- Identificação do cargo -->
+			<div id="cargoLog">
+				<label class="lblCargo" for="cargo">NUTRICIONISTA</label>
+			</div>
 
-					<td>
-						<input onClick=parent.location.href="cadCard.html" name="btnCadCard" id="btnFuncs" type="button" value="Cadastrar Cardápio"/>
-					</td>
-				</tr>
+			<!-- Botões de acesso a funções do sistema -->
+			<div id="orgBtn">
 
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consPrato.html" name="btnConsPrato" id="btnFuncs" type="button" value="Consultar Pratos"/>
-					</td>
+				<div class="btnFunc" onclick="location.href='cadPrato.html';">
+					<img class="iconBtn" src="imgs/icons/iconNewDish.png">
+					<label class="nameBtn">Cadastrar Prato</label>
+				</div>
 
-					<td>
-						<input onClick=parent.location.href="consCard.html" name="btnConsCard" id="btnFuncs" type="button" value="Consultar Cardápio"/>
-					</td>
-				</tr>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconNewMenu.png">
+					<label class="nameBtn pos1">Cadastrar Cardápio</label>
+				</div>
 
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consSubEst.html" name="btnConsSE" id="btnFuncs" type="button" value="Consultar Sub-Estoque"/>
-					</td>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconConsultDish.png">
+					<label class="nameBtn">Consultar Prato</label>
+				</div>
 
-					<td>
-						<input onClick=parent.location.href="solProd.html" name="btnSolProd" id="btnFuncs" type="button" value="Solicitar Produtos"/>
-					</td>
-				</tr>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconConsultMenu.png">
+					<label class="nameBtn pos1">Consultar Cardápio</label>
+				</div>
 
-				<tr>
-					<td>
-						<input onClick=parent.location.href="consDia.html" name="btnConsDia" id="btnFuncs" type="button" value="Consultar Produtos por Dia"/>
-					</td>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconDay.png">
+					<label class="nameBtn pos2">Produtos por Dia</label>
+				</div>
+					
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconWeek.png">
+					<label class="nameBtn pos3">Produtos por Semana</label>
+				</div>
 
-					<td>
-						<input onClick=parent.location.href="consSem.html" name="btnConsSem" id="btnFuncs" type="button" value="Consultar Produtos por Semana"/>
-					</td>
-				</tr>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconSubStock.png">
+					<label class="nameBtn pos4">Sub-Estoque</label>
+				</div>
 
-			</table>
+				<div class="btnFunc">
+					<img class="iconBtn" src="imgs/icons/iconProdReq.png">
+					<label class="nameBtn pos5">Solicitar Produto</label>
+				</div>
+
+			</div>
 		</article>
 
-		<!-- Rodapé do sistema -->
-		<footer class="bg_mg" id="footer">
 
+		<!-- Rodapé do Sistema -->
+		<footer id="footer">
+			<label class="developers">SOFTEC Desenvolvimento MEI</label>
 		</footer>
 
 	</body>

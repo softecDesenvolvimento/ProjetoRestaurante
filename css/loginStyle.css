@@ -1,88 +1,282 @@
-/* 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+/*					<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 01 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: loginStyle.css										 == -->
+						<!-- == ALTERAÇÃO: 03/01/14													 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
+						<!-- == da página de login do sistema                == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 18 de Dezembro de 2013
-				Arquivo..: loginStyle.css
+/* ============ ID's de Formatação ============ */
 
-				Descrição: Folha de estilo base da estrutura do
-				sistema
- */
+/* Div Lateral - Visual */
+#titleLogin{
+	/* Tamanho */
+	width: 100px;
+	height: 250px;
 
- body{
- 	background-color: gray;
- 	font-family: arial;
- }
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 0px 0px 10px 10px;
 
- /* formatação da div de login */
-.bgColor{
-	height: 580px;
-	width: 1024px;
-	margin-top: 0px;
+	/* Posicionamento */
+	position: relative;
+	float: left;
 }
 
- .titleArea{
- 	height: 100px;
- 	width: 600px;
- 	border-radius: 20px;
- 	background-color: black;
- 	opacity: 0.8;
- 	margin-top: 50px;
- 	margin-left: 212px;
- }
+#centralArea{
+	/* Tamanho */
+	height: 350px;
+	width: 70%;
 
- .loginArea{
- 	height: 200px;
- 	width: 400px;
- 	background-color: black;
- 	opacity: 0.8;
- 	border-radius: 20px;
- 	margin-left: 312px;
- 	margin-top: 100px;
- }
-
-/* Formatação do Título */
-.titleSystem{
-	font-size: 30px;
-	margin-left: 60px;
-	margin-top: 5px;
+	/* Posicionamento */
+	position: relative;
+	float: right;
+	top: 50%;
+	margin-top: -175px;
 }
 
-/* Formatação dos labels do login */
-label{
+/* ============ Class de Formatação =========== */
+
+/* Label de Título - Nome do Sistema */
+.lblTitle{
+	/* Formatação */
+	font-size: 20px;
+	font-family: Arial;
 	color: white;
+	letter-spacing: 5px;
+
+	/* Posicionamento */
+	position: relative;
+	float: right;
+	margin-top: 18px;
+	margin-right: 15px;
 }
 
-.lblText{
-	font-size: 20px;
+
+/* Label de Título - Login */
+.lblLogin{
+	/* Formatação */
+	font-size: 50px;
+	font-family: Arial;
+	color: white;
+
+	/* Posicionamento do texto */
+	writing-mode:tb-rl;
+	-webkit-transform:	rotate(270deg);
+	-moz-transform:			rotate(270deg);
+	-o-transform:				rotate(90deg);
+	white-space:nowrap;
+	display:block;
+
+	/* Posição na div */
+	margin-top: 110px;
 }
 
-.linha{
-	height: 45px;
-	text-align: right;
+/* Área de Formulario de Login */
+
+/* Div Central - Visual Login */
+.loginArea{
+	/* Tamanho */
+	width: 100%;
+	height: 250px;
+
+	/* Efeitos */
+	background-color: black;
+	opacity: 0.8;
+	border-radius: 20px 0px 250px 20px;
+
+	/* Posicionamento */
+	position: relative;
+	top: -25px;
 }
 
-.tabelaOrg{
-	height: 150px;
+/* Área de mensagem de erro de login */
+#errorLogin{
+	/* Tamanho */
+	height: 60px;
+	width: 310px;
+
+	/* Efeitos */
+	font: 14px Arial;
+	color: black;
+
+	/* Posicionamento */
+	margin-left: 25px;
+}
+
+/* Área de link para recuperação de senha */
+.recPass{
+	/* Tamanho */
+	height: 40px;
+	width: 220px;
+
+	/* Efeitos */
+	border-radius: 0px 0px 20px 20px;
+	background-color: black;
+	color: white;
+	opacity: 0.8;
+
+	/* Posicionamento*/
+	margin-left: 68.5px;
+	margin-top: -25px
+}
+
+.lblRecPass{
+	/* Formatação */
+	color: white;
+	font: 15px Arial;
+	letter-spacing: 2px;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.lblRecPass:hover{
+	color: blue;
+}
+
+/* Formulário */
+.frmLogin{
+	/* Tamanho */
+	height: 200px;
 	width: 300px;
-	margin-left: 50px;
-	margin-top: 5px;
+
+	/* Formatação */
+	color: white;
+	font: 14px Arial;
+	letter-spacing: 1px;
+
+	/* Posicionamento */
+	margin-top: 25px;
+	margin-left: 25px;
 }
 
-.textArea{
-	width: 180px;
-	height: 30px;
-	font-size: 20px;
+/* Tabela de organização do frmLogin */
+.login{
+	/* Tamanho */
+	height: 200px;
+	width: 300px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 25px;
+}
+
+/* Componentes */
+
+/* Label */
+.lblForm{
+	/* Formatação */
+	font: 20px Arial;
+	color: white;
+	letter-spacing: 2px;
+}
+
+.txbForm{
+	/* Formatação */
+	font: 20px Arial;
+	color: black;
+	letter-spacing: 2px;
+	padding-left: 5px;
+
+	/* Tamanho */
+	width: 300px;
+
+	/* Efeitos */
 	border-radius: 10px;
 }
 
-.txbAlign{
-	text-align: right;
-}
-
-.btnLog{
+.btnLogin{
+	/* Tamanho */
 	height: 30px;
 	width: 100px;
-	border-radius: 5px;
+
+	/* Efeitos */
+	border-radius: 10px;
+
+	/* Posicionamento */
+	position: relative;
+	float: right;
+}
+
+.icon{
+	/* Tamanho */
+	height: 30px;
+	width: 30px;
+
+	/* Efeitos */
+	border-radius: 4px;
+	background-color: white;
+
+	/* Posicionamento */
+	position: absolute;
 	margin-left: 25px;
+	margin-top: 18px;
+}
+
+.error{
+	/* Tamanho */
+	height: 30px;
+	width: 30px;
+}
+
+.message{
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 75px;
+	margin-top: 24px;
+}
+
+/* Elementos Visuais */
+
+.effect{
+	/* Tamanho */
+	height: 36px;
+	width: 110px;
+
+	/* Efeitos */
+	border-radius: 15px;
+
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+	margin-top: 12px;
+	margin-left: 17px;
+}
+
+.color1{
+	/* Efeitos */
+	background-color: darkblue;
+}
+
+.color2{
+	/* Efeitos */
+	background-color: mediumblue;
+}
+
+.color3{
+	/* Efeitos */
+	background-color: blue;
+}
+
+.color4{
+	/* Efeitos */
+	background-color: dodgerblue;
+}
+
+.color5{
+	/* Efeitos */
+	background-color: lightblue;
 }

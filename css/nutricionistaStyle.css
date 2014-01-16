@@ -1,0 +1,167 @@
+/*					<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 01 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: nutricionistaStyle.css										 == -->
+						<!-- == ALTERAÇÃO: 03/01/14													 == -->
+						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
+						<!-- == da página do nutricionista.                  == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+*/
+
+/* ===================== Div Cargos ======================= */
+#cargoLog{
+	/* Tamanho */
+	height: 50px;
+	width: 276px;
+
+	/* Efeitos */
+	border-radius: 0px 0px 20px 20px;
+	background-color: black;	
+	opacity: 0.8;
+
+	/* Posicionamento */
+	position: absolute;
+	float: left;
+}
+
+.lblCargo{
+	/* Formatação */
+	color: white;
+	font: 22px arial;
+	letter-spacing: 1px;
+
+	/* Posicionamento */
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+/* ========== Div central com botões de acesso ============ */
+
+#orgBtn{
+	/* Tamanho */
+	height: 400px;
+	width: 1000px;
+
+	/* Efeitos */
+	background-color: black;
+	border-radius: 20px;
+	opacity: 0.8;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 56%;
+	left: 50%;
+	margin-left: -500px;
+	margin-top: -190px;
+}
+
+.btnFunc{
+	/* Tamanho */
+	height: 199px;
+	width: 248px;
+
+	/* Efeitos */
+	border-style: solid;
+	border-width: thin;
+	border-color: lightblue;
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+}
+
+.btnFunc:hover{
+	background-color: gray;
+}
+
+/* ========== Botões de acesso as funções ==========*/
+/* Icone */
+.iconBtn{
+	/* Tamanho */
+	height: 80px;
+	width: 80px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 40px;
+	left: 84px;
+}
+
+.nameBtn{
+	/* Formatação */
+	font: 18px Arial;
+	letter-spacing: 2px;
+	color: white;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 70%;
+	left: 18%;
+
+}
+
+/* Posições do Label dos botões */
+.pos1{
+	/* Posicionamento */
+	top: 70%;
+	left: 12%;
+}
+
+.pos2{
+	/* Posicionamento */
+	top: 70%;
+	left: 17%;
+}
+
+.pos3{
+	/* Posicionamento */
+	top: 70%;
+	left: 7%;
+}
+
+.pos4{
+	/* Posicionamento */
+	top: 70%;
+	left: 25%;
+}
+
+.pos5{
+	/* Posicionamento */
+	top: 70%;
+	left: 15%;
+}
+
+/* Efeito Visual */
+
+.effect{
+	/* Tamanho */
+	height: 36px;
+	width: 110px;
+
+	/* Efeitos */
+	border-radius: 15px;
+
+
+	/* Posicionamento */
+	position: relative;
+	float: left;
+	margin-top: 12px;
+	margin-left: 17px;
+}
+
+.color1{
+	/* Efeitos */
+	background-color: darkblue;
+}
+
+.color2{
+	/* Efeitos */
+	background-color: lightblue;
+}

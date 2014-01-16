@@ -1,193 +1,358 @@
-<!-- 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 02 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: cadPrato.html        						 == -->
+						<!-- == ALTERAÇÃO: 05/01/14													 == -->
+						<!-- == DESCRIÇÃO: Página de cadastro de pratos.     == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 18 de Dezembro de 2013
-				Arquivo..: nutricionista.html
-
-				Descrição: página inicial de acesso do sistema 
-				para o nutricionista
--->
-
-<DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html>
+	<!-- Cabeçalho da página -->
 	<head>
 
-		<title>Sistema - Restaurante</title>
+		<!-- Título e Ícone da página -->
+		<title>Cadastro de Pratos - .:: Sistema de Gestão OnGR ::.</title>
 
-		<!-- Ligação das folhas de estilo externas -->
-		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/cadPratoStyle.css">
+		<!-- Link para folhas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/cadPratoStyle.css" />
 
-		<script type="text/javascript" src="javascript/cadPratoFunc.js"></script>
+		<!-- Link para arquivo de funções em javascript -->
+		<script type="text/javascript" src="js/cadPratoFunc.js"></script>
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Padrão de codificação de caracteres -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+		<!-- Padronização para outras resoluções -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
 	</head>
 
+	<!-- Corpo da página -->
 	<body onLoad=divVisible(0);>
 
 		<!-- Cabeçalho do Sistema -->
-		<header class="imgHeader bg_mg bgop" id="header">
-			<!-- Área de identificação da função do usuário -->
-			<div class="divFunc pos1">
-				<br />
-				<label class="identFunc">NT</label>
+		<header id="header">
+			<div class="effect color1"></div>
+			<div class="effect color2"></div>
+
+			<div class="btnExit posRig">
+				<label class="lblExit">Sair</label>
 			</div>
-
-			<!-- Botões de acesso a home do usuário e configurações -->
-			<div class="mg_btns1 divButtom pos1">
-
-				<a href="nutricionista.html">
-					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial" />
-				</a>
-
+			<div class="identify posRig">
+				<label class="lblIdentify">Bruno Luiz de Oliveira</label>
 			</div>
-
-			<div class="mg_btns2 divButtom pos1">
-
-				<a href="config.html">
-					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações" />
-				</a>
-
+			<div class="btnHeader posRig">
+				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
 			</div>
-
-			<!-- Área de identicação do usuário logado -->
-			<div class="divIdent pos2">
-				<label class="lblUser">Nome com ate 30 caracteres</label><br />
-				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			<div class="btnHeader posRig" onclick="location.href='nutricionista.html';">
+				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
 			</div>
 		</header>
 
-		<!-- Área central de acesso as funções do sistema disponiveis para o usuário -->
-		<article class="bg_mg bgop" id="centralCad">
-			<br />
+		<!-- Área central da página de Login -->
+		<article id="central">
 
-			<div class="cadProgress">
+			<div id="titlePage">
+				<label class="lblTitle">Cadastro de Pratos</label>
+			</div>
 
-				<div id="step1" class="number1">
-					<label class="posProgress">1</label>
+			<div id="orgProgress">
+
+				<div class="numberLeft" id="step1">
+					<label class="lblNumber">1</label>
 				</div>
 
-				<label class="textIdent">IDENTIFICAÇÃO</label>
-				<div id="step1b" class="bar">
+				<div class="bar" id="step1b">
+					<label class="lblPass">Identificação</label>
 				</div>
 
-				<div id="step2" class="number">
-					<label class="posProgress">2</label>
+				<div class="number" id="step2">
+					<label class="lblNumber">2</label>
 				</div>
 
-				<label class="textIdent">INGREDIENTES</label>
-				<div id="step2b" class="bar">
+				<div class="bar" id="step2b">
+					<label class="lblPass">Ingredientes</label>
 				</div>
 
-				<div id="step3" class="number">
-					<label class="posProgress">3</label>
+				<div class="number" id="step3">
+					<label class="lblNumber">3</label>
 				</div>
 
-				<label class="textIdent">MODO DE PREPARO</label>
-				<div id="step3b" class="bar">
+				<div class="bar" id="step3b">
+					<label class="lblPass">Modo de Preparo</label>
 				</div>
 
-				<div id="step4" class="number">
-					<label class="posProgress2">OK</label>
+				<div class="number nbr" id="step4">
+					<label class="lblOk">OK</label>
 				</div>
 
 			</div>
 
+			
 
-			<div class="frmIdentif" id="enableIdent">
-				<br>
+			<!-- Identificação do prato  -->
+			<div id="frmCadPrato">
+
 				<form>
 
-					<table class="tabFormIdent">
+					<table class="orgForm">
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Nome do Prato:</td>
-							<td class="colTxb">
-								<input class="txbForm" type="text" name="txbNomePrat">
+							<td class="colComp">
+								<input class="component" name="txbPrato" type="text"/>
 							</td>
 						</tr>
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Categoria:</td>
-							<td>
-								<select class="txbForm" name="cbxCateg">
+							<td class="colComp">
+								<select class="component2" name="gpxCateg">
 									<option>Selecione uma categoria...</option>
 								</select>
 							</td>
 						</tr>
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Grupo:</td>
-							<td>
-								<select class="txbForm" name="cbxGrupo">
+							<td class="colComp">
+								<select class="component2" name="gpxGrupo">
 									<option>Selecione um grupo...</option>
 								</select>
 							</td>
 						</tr>
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Preparado por:</td>
-							<td>
-								<input class="txbForm" type="text" name="txbPrepPor">
+							<td class="colComp">
+								<input class="component" name="txbPrep" type="text"/>
 							</td>
 						</tr>
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Aprovado em:</td>
-							<td>
-								<input class="txbForm" type="date" name="dtpAprov">
+							<td class="colComp">
+								<input class="component" name="dtpAprov" type="date"/>
 							</td>
 						</tr>
 
-						<tr>
+						<tr class="line">
 							<td class="colLbl">Fonte:</td>
-							<td>
-								<input class="txbForm" type="text" name="txbFonte">
-							</td>
-						</tr>
-
-						<tr>
-							<td class="colLbl">Tempo de preparo:</td>
-							<td>
-								<input class="txbForm" type="text" name="txbTempo">
+							<td class="colComp">
+								<input class="component" name="txbFonte" type="text"/>
 							</td>
 						</tr>
 
 					</table>
 
+					<div class="divBtns">
+						<input class="btnNext" name="btnNext" type="button" onClick=divVisible(1); value="Próximo"/>
+					</div>
+
 				</form>
-				<div class="divNextBack">
-					<input class="btnNext" type="button" name="btnNext1" onClick=divVisible(1); value="Próximo">
+
+			</div>
+
+			<div id="frmCadPrato2">	
+
+				<form>	
+
+					<div class="orgForm2">
+
+						<label>Ingrediente:</label>
+						<input class="txbIngred fntSize" name="txbIngred" type="text" />
+
+						<label>Unid.:</label>
+						<input class="txbUnid fntSize" name="txbUnid" type="text" />
+
+						<br /><br />
+
+						<label>(g) per capita:</label>
+						<input class="txbUnid fntSize" name="txbGPC" type="text" />
+
+						<label>Peso Liq.:</label>
+						<input class="txbUnid fntSize" name="txbPesLiq" type="text" />
+
+						<label>T. Bruto.:</label>
+						<input class="txbUnid fntSize" name="txbTotBr" type="text" />
+
+						<br /><br />
+
+						<label>Rendimento:</label>
+						<input class="txbUnid2 fntSize" name="txbRend" type="text" />
+
+						<label>FC:</label>
+						<input class="txbUnid fntSize" name="txbFC" type="text" />
+
+						<label>Obs:</label>
+						<input class="txbObs fntSize" name="txbObs" type="text" />
+
+						<br /><br />
+
+						<input class="btnAdd fntSize" name="btnAdd" type="button" value="Adicionar à Lista" />
+						<input class="btnAdd fntSize btnErase" name="btnErase" type="button" value="Limpar" />	
+
+					</div>
+
+					<div id="tableList">
+
+						<table class="list" border="1">
+							<tr>
+								<th class="colCheck">
+									<input name="cbxAll" type="checkbox" />
+								</th>
+								<th class="colTexts">Ingrediente</th>
+								<th class="colMed">Un.</th>
+								<th class="colMed">gpc</th>
+								<th class="colMed">PL</th>
+								<th class="colMed">TB</th>
+								<th class="colMed">Ren.</th>
+								<th class="colMed">FC</th>
+								<th class="colTexts">Observações</th>
+							</tr>
+
+							<!-- Bloco que deve ser construído em php a cada inserção
+							de novo ingrediente -->
+							<tr>
+								<td class="colCheck">
+									<input name="cbxAll" type="checkbox" />
+								</th>
+								<td class="colTexts">Ingredientes</td>
+								<td class="colMed">Un.</td>
+								<td class="colMed">gpc</td>
+								<td class="colMed">PL</td>
+								<td class="colMed">TB</td>
+								<td class="colMed">Ren.</td>
+								<td class="colMed">FC</td>
+								<td class="colTexts">Observações</td>
+							</tr>
+
+							<!-- ========================================================= -->
+
+						</table>
+
+					</div>
+
+					<div class="divBtns">
+						<input class="btnBack" name="btnBack" type="button" value="Voltar" onClick=divVisible(0); />
+						<input class="btnNext" name="btnNext" type="button" value="Próximo" onClick=divVisible(2); />
+					</div>
+
+				</form>
+
+			</div>
+
+			<div id="frmCadPrato3">
+
+				<form>		
+
+					<table class="orgForm3">
+
+						<tr>
+							<td colspan="5">
+								<label>Modo de Preparo:</label>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="5">
+								<textarea  class="txbModPrep" name="txbModPrep"></textarea>
+							</td>
+						</tr>
+
+						<tr>
+							<td colspan="2">
+								<label>Ingredientes para:</label>
+							</td>
+							<td>
+								<input class="txbsMod" name="txbPorcoes" type="text" />
+							</td>
+							<td colspan="2">
+								<label>porções</label>
+							</td>
+						</tr>
+
+						<tr>
+
+							<td>
+								<label>Tempo min. Preparo:</label>
+							</td>
+							<td>
+								<input class="txbsMod" name="txbTempoP" type="text" />
+							</td>
+
+							<td colspan="2">
+								<label>Rendimento Liq.:</label>
+							</td>
+							<td>
+								<input class="txbsMod" name="txbRendLq" type="text" />
+							</td>
+
+						</tr>
+
+						<tr>
+
+							<td colspan="2">
+								<label>Peso médio por porção:</label>
+							</td>
+							<td>
+								<input class="txbsMod" name="txbPesoMed" type="text" />
+							</td>
+							<td>Tot. kcal:</td>
+							<td>
+								<input class="txbsMod" name="txbTotCal" type="text" />
+							</td>
+						</tr>
+
+					</table>
+
+					<div class="divBtns">
+						<input class="btnBack" name="btnBack" type="button" value="Voltar" onClick=divVisible(1); />
+						<input class="btnNext" name="btnNext" type="button" onClick=divVisible(3); value="Concluir"/>
+					</div>	
+
+				</form>
+
+			</div>
+
+			<div id="regSucess">
+
+				<div class="regMens">
+					<label class="txtMens">PRATO CADASTRADO COM SUCESSO!</label>
 				</div>
+
+				<div class="btnAcess" onclick="location.href='cadPrato.html';">
+					<img class="iconBtn" src="imgs/icons/iconNewDish.png">
+					<label class="nameBtn">Novo Prato</label>
+				</div>
+
+				<div class="btnAcess dist" onclick="location.href='consPrato.html';">
+					<img class="iconBtn" src="imgs/icons/iconConsultDish.png">
+					<label class="nameBtn posTxt1">Consultar Pratos</label>
+				</div>
+
+				<div class="btnAcess dist2" onclick="location.href='nutricionista.html';">
+					<img class="iconBtn" src="imgs/icons/iconHome2.png">
+					<label class="nameBtn posTxt2">Voltar ao início</label>
+				</div>
+
 			</div>
 
-
-
-			<div class="frmIngred" id="enableIngred">
-				<br>
-				<input type="button" name="btnNext2" onClick=divVisible(2); value="Próximo">
-				<input type="button" name="btnNext3" onClick=divVisible(0); value="Anterior">
-			</div>
-
-
-
-			<div class="frmPreparo" id="enablePreparo">
-				<br>
-				<input type="button" name="btnNext3" onClick=divVisible(3); value="Concluir">
-				<input type="button" name="btnNext3" onClick=divVisible(1); value="Anterior">
-			</div>
-
-			<div class="frmFim" id="enableFim">
-			</div>
-
-			
 		</article>
-		<!-- Rodapé do sistema -->
-		<footer class="bg_mg" id="footer">
 
+
+		<!-- Rodapé do Sistema -->
+		<footer id="footer">
+			
 		</footer>
 
 	</body>
