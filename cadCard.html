@@ -6,9 +6,9 @@
 						<!-- == PROJETO..: Sistema OnGR               			 == -->
 						<!-- == VERSÃO...: 0.1 Beta													 == -->
 						<!-- == ============================================ == -->
-						<!-- == ARQUIVO..: consPrato.html        						 == -->
+						<!-- == ARQUIVO..: cadCard.html         						 == -->
 						<!-- == ALTERAÇÃO: 05/01/14													 == -->
-						<!-- == DESCRIÇÃO: Página de cadastro de pratos.     == -->
+						<!-- == DESCRIÇÃO: Página de cadastro de Cardápio.   == -->
 						<!-- ================================================== -->
 						<!-- ================================================== -->
 
@@ -19,14 +19,14 @@
 	<head>
 
 		<!-- Título e Ícone da página -->
-		<title>Consulta de Pratos - .:: Sistema de Gestão OnGR ::.</title>
+		<title>Cadastro de Cardápio - .:: Sistema de Gestão OnGR ::.</title>
 
 		<!-- Link para folhas de estilo -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
-		<link rel="stylesheet" type="text/css" href="css/consPratoStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/cadCardStyle.css" />
 
 		<!-- Link para arquivo de funções em javascript -->
-		<script type="text/javascript" src="js/cadPratoFunc.js"></script>
+		<script type="text/javascript" src="js/cadCardFunc.js"></script>
 
 		<!-- Padrão de codificação de caracteres -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
@@ -62,10 +62,76 @@
 		<article id="central">
 
 			<div id="titlePage">
-				<label class="lblTitle">Consulta de Pratos</label>
+				<label class="lblTitle">Cadastro de Cardápio</label>
 			</div>
 
-			<div class="orgVis">
+			<div id="Days" class="orgVis">
+
+				<div class="msgDays">
+					<label class="lblMsgDay">Selecione o dia da semana para definir o cardápio!</label>
+				</div>
+
+				<div class="btnDays">
+
+					<table class="btnDays">
+
+						<tr>
+
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc">Domingo</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc poslbl">Segunda-Feira</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc poslbl2">Terça-Feira</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+								  <label class="lblBtnAcc poslbl3">Quarta-Feira</label>
+								</div>
+							</td>
+
+						</tr>
+
+						<tr>
+
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc poslbl3">Quinta-Feira</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc poslbl2">Sexta-Feira</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onClick=divVisible(1);>
+									<label class="lblBtnAcc">Sábado</label>
+								</div>
+							</td>
+							<td class="orgAccess">
+								<div class="btnAccess" onclick="location.href='nutricionista.html';">
+									<label class="lblBtnAcc poslbl4">Voltar ao início</label>
+								</div>
+							</td>
+
+						</tr>
+
+					</table>
+
+				</div>
+
+			</div>
+
+			<div id="Dishes" class="orgVis">
 
 				<form>
 
@@ -114,7 +180,7 @@
 
 							<tr>
 								<th class="cbxCol">
-									<input name="cbxAllDishes" type="checkbox" />
+									
 								</th>
 								<th class="dishCol dColPos">Nome do Prato</th>
 								<th class="categCol">Categoria</th>
@@ -146,9 +212,17 @@
 						</table>
 					</div>
 
+				<div class="btnAccept posBtn" onClick=divVisible(0);>
+					<label class="lblAccept">Confirmar Cardápio</label>
+				</div>
+
 				</form>
 
+				
+
 			</div>
+
+			
 
 		</article>
 

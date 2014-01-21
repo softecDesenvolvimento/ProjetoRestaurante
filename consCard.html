@@ -1,368 +1,422 @@
-<!-- 
-				Autor(es): Bruno Oliveira e Giovani Aparecido
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTOR....: Bruno Oliveira										 == -->
+						<!-- == DATA.....: 02 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               			 == -->
+						<!-- == VERSÃO...: 0.1 Beta													 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: consCard.html        						 == -->
+						<!-- == ALTERAÇÃO: 05/01/14													 == -->
+						<!-- == DESCRIÇÃO: Página de cadastro de cardápio.   == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
 
-				Projeto..: Sistema para controle de Restuarante
-				Data.....: 18 de Dezembro de 2013
-				Arquivo..: nutricionista.html
-
-				Descrição: página inicial de acesso do sistema 
-				para o nutricionista
--->
-
-<DOCTYPE hmtl>
+<!DOCTYPE html>
 
 <html>
+	<!-- Cabeçalho da página -->
 	<head>
 
-		<title>.:: Consulta de Cardápio ::. - Sistema de Restaurante</title>
+		<!-- Título e Ícone da página -->
+		<title>Consulta de Cardápio - .:: Sistema de Gestão OnGR ::.</title>
 
-		<!-- Ligação das folhas de estilo externas -->
-		<link rel="stylesheet" type="text/css" href="css/mainStyle.css">
-		<link rel="stylesheet" type="text/css" href="css/consCardStyle.css">
+		<!-- Link para folhas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/consCardStyle.css" />
 
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<!-- Link para arquivo de funções em javascript -->
+
+		<!-- Padrão de codificação de caracteres -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+		<!-- Padronização para outras resoluções -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
 
 	</head>
 
-	<body>
+	<!-- Corpo da página -->
+	<body onLoad=divVisible(0);>
 
 		<!-- Cabeçalho do Sistema -->
-		<header class="imgHeader bg_mg bgop" id="header">
-			<!-- Área de identificação da função do usuário -->
-			<div class="divFunc pos1">
-				<br />
-				<label class="identFunc">NT</label>
+		<header id="header">
+			<div class="effect color1"></div>
+			<div class="effect color2"></div>
+
+			<div class="btnExit posRig">
+				<label class="lblExit">Sair</label>
 			</div>
-
-			<!-- Botões de acesso a home do usuário e configurações -->
-			<div class="mg_btns1 divButtom pos1">
-
-				<a href="nutricionista.html">
-					<img src="imgs/iconHome.png" class="btnMain" title="Página Inicial"/>
-				</a>
-
+			<div class="identify posRig">
+				<label class="lblIdentify">Bruno Luiz de Oliveira</label>
 			</div>
-
-			<div class="mg_btns2 divButtom pos1">
-
-				<a href="config.html">
-					<img src="imgs/iconConfig.png" class="btnMain" title="Configurações"/>
-				</a>
-
+			<div class="btnHeader posRig">
+				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
 			</div>
-
-			<!-- Área de identicação do usuário logado -->
-			<div class="divIdent pos2">
-				<label class="lblUser">Nome com ate 30 caracteres</label><br />
-				<input class="btnLogout" name="btnSair" type="button" value="Sair" onClick=parent.location.href="login.html">
+			<div class="btnHeader posRig" onclick="location.href='nutricionista.html';">
+				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
 			</div>
 		</header>
 
-		<!-- Área central  -->
-		<article class="bg_mg bgop" id="central">
-			<br />
-			<!-- Tabela para exibição página -->
-			<table id="visGeral">
+		<!-- Área central da página de Login -->
+		<article id="central">
 
-				<!-- Linha de exibição da página -->
-				<tr class="titlePage">
-					<th>
-						<div class="title">CARDÁPIO DA SEMANA</div>
-						<!-- Botão de acesso ao cadastro do cardápio -->
-						<div class="button">
-							<input class="btnNewCad" onClick=parent.location.href="cadCard.html" name="btnNewCard" type="button" value="Definir Cardápio"/>
-						</div>
-					</th>
-				</tr>
+			<div id="titlePage">
+				<label class="lblTitle">Cardápio Semanal</label>
+			</div>
 
-				<!-- Linha de exibição do dia da semana e pratos do dia -->
-				<tr>
-					<td>
+			<div class="orgVis">
 
-						<!-- Dia da semana -->
-						<div class="diaSemana">
-							<label>Domingo</label>
-						</div>
+				<form>
 
-						<!-- Tabela para exibição dos pratos do dia -->
-						<div class="divCentral">				
-							<table id="mgTable">
+				<div class="orgDay">
 
-								<!-- Título da tabela de pratos -->
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+					<div class="divDay">
+						<label class="weekDay">Domingo</label>
+					</div>
 
-								<!-- Lista de pratos relacinados para o dia da semana definido -->
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+					<div class="divTbl">
+						<table id="listDishes">
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Segunda-feira</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Terça-feira</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+							<!-- =============================================== -->
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+						</table>
+					</div>
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+				</div>
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Quarta-feira</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+				</form>
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+				<form>
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+				<div class="orgDay pD">
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Quinta-feira</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+					<div class="divDay">
+						<label class="weekDay">Segunda-Feira</label>
+					</div>
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+					<div class="divTbl">
+						<table id="listDishes">
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Sexta-feira</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+							<!-- =============================================== -->
 
-				<tr>
-					<td>
-						<div class="diaSemana">
-							<label>Sábado</label>
-						</div>
-						<div class="divCentral">				
-							<table id="mgTable">
+						</table>
+					</div>
 
-								<tr class="colTitle">
-									<th>
-										<input name="cbxAllItens" type="checkbox"/>
-									</th>
-									<th>Nome do prato</th>
-									<th>Peso</th>
-									<th>Foto</th>
-									<th>Opções</th>
-								</tr>
+				</div>
 
-								<tr>
-									<td class="colCheck bordLinhas">
-										<input name="cbxSelectItem" type="checkbox" title="Selecionar item" />
-									</td>
-									<td class="colName bordLinhas"></td>
-									<td class="colWeight bordLinhas"></td>
-									<td class="colImg bordLinhas">
-										<img src="img/teste.jpg">
-									</td>
-									<td class="colOpc bordLinhas">
-										<input class="btnOpcs" name="btnEdit" type="image"  src="imgs/iconEdit.png" title="Editar"/>
-										<input class="btnOpcs" name="btnTrade" type="image" src="imgs/iconTrade.png" title="Substituir prato"/>
-										<input class="btnOpcs" name="btnDelete" type="image" src="imgs/iconDelete.png" title="Remover do Cardápio"/>
-									</td>
-								</tr>
-								
-							</table>
-						</div>
-					</td>
-				</tr>
+				</form>
 
-			</table>
-			<br />
-			<br />
+				<form>
+
+				<div class="orgDay pD">
+
+					<div class="divDay">
+						<label class="weekDay">Terça-Feira</label>
+					</div>
+
+					<div class="divTbl">
+						<table id="listDishes">
+
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
+
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
+
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
+
+							<!-- =============================================== -->
+
+						</table>
+					</div>
+
+				</div>
+
+				</form>
+
+				<form>
+
+				<div class="orgDay pD">
+
+					<div class="divDay">
+						<label class="weekDay">Quarta-Feira</label>
+					</div>
+
+					<div class="divTbl">
+						<table id="listDishes">
+
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
+
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
+
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
+
+							<!-- =============================================== -->
+
+						</table>
+					</div>
+
+				</div>
+
+				</form>
+
+				<form>
+
+				<div class="orgDay pD">
+
+					<div class="divDay">
+						<label class="weekDay">Quinta-Feira</label>
+					</div>
+
+					<div class="divTbl">
+						<table id="listDishes">
+
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
+
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
+
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
+
+							<!-- =============================================== -->
+
+						</table>
+					</div>
+
+				</div>
+
+				</form>
+
+				<form>
+
+				<div class="orgDay pD">
+
+					<div class="divDay">
+						<label class="weekDay">Sexta-Feira</label>
+					</div>
+
+					<div class="divTbl">
+						<table id="listDishes">
+
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
+
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
+
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
+
+							<!-- =============================================== -->
+
+						</table>
+					</div>
+
+				</div>
+
+				</form>
+
+				<form>
+
+				<div class="orgDay pD">
+
+					<div class="divDay">
+						<label class="weekDay">Sábado</label>
+					</div>
+
+					<div class="divTbl">
+						<table id="listDishes">
+
+							<tr>
+								<th class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</th>
+								<th class="dishCol dColPos">Nome do Prato</th>
+								<th class="categCol">Categoria</th>
+								<th class="groupCol">Grupo</th>
+								<th class="optCol">Opções</th>
+							</tr>
+
+							<!-- Bloco a ser criado a cada novo prato cadastrado -->
+
+							<tr class="dishLine">
+								<td class="cbxCol">
+									<input name="cbxAllDishes" type="checkbox" />
+								</td>
+								<td class="dishCol">Nome do Prato</td>
+								<td class="categCol">Categoria</td>
+								<td class="groupCol">Grupo</td>
+								<td class="optCol">
+									<div id="btnTrade" onClick>
+										<img class="iconBtn" src="imgs/icons/iconTrade.png"/>
+									</div>
+									<div id="btnDelete" onClick>
+										<img class="iconBtn" src="imgs/icons/iconDelete.png"/>
+									</div>
+								</td>
+							</tr>
+
+							<!-- =============================================== -->
+
+						</table>
+					</div>
+
+				</div>
+
+				</form>
+
+			</div>
+
 		</article>
 
-		<!-- Rodapé do sistema -->
-		<footer class="bg_mg" id="footer">
 
+		<!-- Rodapé do Sistema -->
+		<footer id="footer">
+			
 		</footer>
 
 	</body>

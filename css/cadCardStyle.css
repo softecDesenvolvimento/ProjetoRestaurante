@@ -6,28 +6,18 @@
 						<!-- == PROJETO..: Sistema OnGR               			 == -->
 						<!-- == VERSÃO...: 0.1 Beta													 == -->
 						<!-- == ============================================ == -->
-						<!-- == ARQUIVO..: consCardStyle.css   	  					 == -->
+						<!-- == ARQUIVO..: consPratoStyle.css   						 == -->
 						<!-- == ALTERAÇÃO: 16/01/14													 == -->
 						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
-						<!-- == da página de consulta de cardápio.           == -->
+						<!-- == da página de cadastro de cardápio.           == -->
 						<!-- ================================================== -->
 						<!-- ================================================== -->
 */
 
-/* Área Central */
-#central{
-	/* Tamanho */
-	height: 2500px;
-	width: 100%;
-
-	min-height: 400px;
-	min-width: 1000px;
-}
-
 /* Div central de visualização da tabela */
 .orgVis{
 	/* Tamanho */
-	height: 2400px;
+	height: 450px;
 	width: 880px;
 
 	/* Efeitos */
@@ -36,14 +26,14 @@
 	opacity: 0.8;
 
 	/* Posicionamento */
-	position: relative;
-	top: 60px;
+	position: absolute;
+	top: 100px;
 	left: calc(50% - 390px);
 }
 
 .divTbl{
 	width: 820px;
-	height: 143px;
+	height: 250px;
 
 	/* Posicionamento */
 	position: absolute;
@@ -119,7 +109,7 @@ th{
 }
 
 /* Botões de opções na lista de pratos */
-#btnTrade{
+#btnEdit{
 	height: 40px;
 	width: 40px;
 	float: left;
@@ -201,7 +191,17 @@ th{
 	margin-left: 25px;
 }
 
-.btnSearch:hover{
+.btnAccept{
+	height: 35px;
+	width: 200px;
+
+	background-color: orange;
+	border-radius: 10px;
+
+	margin-left: 25px;
+}
+
+.btnSearch:hover, .btnAccept:hover{
 	background-color: gray;
 }
 
@@ -214,34 +214,92 @@ th{
 	margin-top: 3.5px;
 }
 
-/* div com o dia da semana */
-.orgDay{
-	height: 250px;
-	width: 100%;
-
-	position: relative;
-}
-
-.pD{
-	margin-top: 80px;
-}
-
-.divDay{
-	/* Tamanho */
-	height: 50px;
-	width: 100%;
-
-	background-color: orange;
-
+.posBtn{
 	position: absolute;
-	top: 30px;
+	margin-left: 616px;
+	margin-top: 392px;
 }
 
-.weekDay{
+.lblAccept{
 	color: white;
-	font: 20px Arial;
+	font: 18px Arial;
 	letter-spacing: 1px;
 	position: absolute;
-	top: 12px;
+	margin-top: 5px;
+	margin-left: 12px;
+}
+
+#Days{
+	visibility: hidden;
+}
+
+#Dishes{
+	visibility: hidden;
+}
+
+.msgDays{
+	height: 150px;
+	width: 100%;
+}
+
+.lblMsgDay{
+	font: 20px Arial;
+	letter-spacing: 2px;
+	color: white;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 150px;
+}
+
+.btnDays{
+	height: 302px;
+	width: 100.2%;
+	position: absolute;
+	margin-left: -1px;
+	padding: 0px;
+}
+
+.orgAccess{
+	height: 50%;
+	width: 25%;
+	padding: 0px;
+	border-style: none;
+}
+
+.btnAccess{
+	height: 100%;
+	width: 100%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: lightblue;
+}
+
+.btnAccess:hover{
+	background-color: gray;
+}
+
+.lblBtnAcc{
+	color: white;
+	font: 18px Arial;
+	letter-spacing: 1px;
+
+	position: relative;
+	top: 60px;
+	left: 70px;
+}
+
+.poslbl{
+	left: 40px;
+}
+
+.poslbl2{
+	left: 60px;
+}
+
+.poslbl3{
+	left: 50px;
+}
+
+.poslbl4{
 	left: 40px;
 }
