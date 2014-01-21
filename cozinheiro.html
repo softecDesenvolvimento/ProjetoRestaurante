@@ -1,0 +1,84 @@
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						<!-- == AUTORES..: Bruno Oliveira e GIOVANI APARECIDO== -->
+						<!-- == DATA.....: 12 de Janeiro de 2014             == -->
+						<!-- == ============================================ == -->
+						<!-- == PROJETO..: Sistema OnGR               		 == -->
+						<!-- == VERSÃO...: 0.1 Beta							 == -->
+						<!-- == ============================================ == -->
+						<!-- == ARQUIVO..: cozinheiro.html   				 == -->
+						<!-- == ALTERAÇÃO: 13/01/14							 == -->
+						<!-- == DESCRIÇÃO: Página inicial do cozinheiro      == -->
+						<!-- == com acesso as funcionalidades disponíveis ao == -->
+						<!-- == cargo.                                       == -->
+						<!-- ================================================== -->
+						<!-- ================================================== -->
+						
+<!DOCTYPE html>
+
+<html>
+	<!-- Cabeçalho da página -->
+	<head>
+		<!-- Título e Ícone da página -->
+		<title>Cozinheiro - .:: Sistema de Gestão OnGR ::.</title>
+		
+		<!-- Link para folhas de estilo -->
+		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/cozinhaStyle.css" />
+
+		<!-- Link para arquivo de funções em javascript -->
+
+		<!-- Padrão de codificação de caracteres -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+
+		<!-- Padronização para outras resoluções -->
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+	</head>
+	
+	<!-- Corpo da página -->
+	<body>
+		<!-- Cabeçalho do Sistema -->
+		<header id="header">
+			<div class="effect color1"></div>
+			<div class="effect color2"></div>
+
+			<div class="btnExit posRig" onClick=parent.location.href="login.html">
+				<label class="lblExit" >Sair</label>
+			</div>
+			<div class="identify posRig">
+				<label class="lblIdentify">Nome do Usuário Logado</label>
+			</div>
+			<div class="btnHeader posRig">
+				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
+			</div>
+			<div class="btnHeader posRig">
+				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
+			</div>
+		</header>
+
+		<!-- Área central da página do cozinheiro -->
+		<article id="central">
+			<!-- Identificação do cargo -->
+			<div id="cargoLog">
+				<label class="lblCargo" for="cargo">COZINHEIRO</label>
+			</div>
+
+			<!-- Botões de acesso a funções do sistema -->
+			<div id="orgBtn">
+				<div class="btnFunc"> Lista de Produtos do Dia</div>
+				<div class="btnFunc">Lista de Produção</div>
+				<div class="btnFunc">Solicitar Produto</div>
+				<div class="btnFunc">Consultar Sub-Estoque</div>
+				<div class="btnFunc">Consultar Prato</div>
+				<div class="btnFunc">Consultar Cardápio</div>
+				<div class="btnFunc">Consultar Produtos do Dia</div>
+				<div class="btnFunc">Consultar Produtos da Semana</div>
+			</div>
+		</article>
+
+		<!-- Rodapé do Sistema -->
+		<footer id="footer">
+			<label class="developers">SOFTEC Desenvolvimento MEI</label>
+		</footer>
+	</body>
+</html>
