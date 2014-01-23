@@ -6,10 +6,9 @@
 						<!-- == PROJETO..: Sistema OnGR               		 == -->
 						<!-- == VERSÃO...: 0.1 Beta							 == -->
 						<!-- == ============================================ == -->
-						<!-- == ARQUIVO..: almoxarifeScript.css 				 == -->
-						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
-						<!-- == da página padrão  de todas as divs de botões == -->
-						<!-- == das Funções de cada usuário.				 == -->
+						<!-- == ARQUIVO..: almoxarifeScript.css				 == -->
+						<!-- == DESCRIÇÃO: Folha de Script com formatação da == -->
+						<!-- == da página de almoxarife      				 == -->
 						<!-- ================================================== -->
 						<!-- ================================================== -->
 */

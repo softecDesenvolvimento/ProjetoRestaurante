@@ -1,14 +1,13 @@
 						<!-- ================================================== -->
 						<!-- ================================================== -->
 						<!-- == AUTORES..: Bruno Oliveira e GIOVANI APARECIDO== -->
-						<!-- == DATA.....: 13 de Janeiro de 2014             == -->
+						<!-- == DATA.....: 14 de Janeiro de 2014             == -->
 						<!-- == ============================================ == -->
 						<!-- == PROJETO..: Sistema OnGR               		 == -->
 						<!-- == VERSÃO...: 0.1 Beta							 == -->
 						<!-- == ============================================ == -->
-						<!-- == ARQUIVO..: auxCozinheiro.html   		     == -->
-						<!-- == ALTERADO.: 14 Janeiro de 2914                == -->
-						<!-- == DESCRIÇÃO: Página inicial do almoxarife com  == --> 
+						<!-- == ARQUIVO..: caixa.html   		             == -->
+						<!-- == DESCRIÇÃO: Página inicial do caixa com  == --> 
 						<!-- == acesso as funcionalidades disponíveis ao     == -->
 						<!-- == cargo.                                       == -->
 						<!-- ================================================== -->
@@ -20,15 +19,14 @@
 	<!-- Cabeçalho da página -->
 	<head>
 		<!-- Título e Ícone da página -->
-		<title>Almoxarife - .:: Sistema de Gestão OnGR ::.</title>
+		<title>Caixa - .:: Sistema de Gestão OnGR ::.</title>
 		
 		<!-- Link para folhas de estilo -->
 		<link rel="stylesheet" type="text/css" href="css/mainStyle.css" />
-		<link rel="stylesheet" type="text/css" href="css/almoxarifeStyle.css" />
+		<link rel="stylesheet" type="text/css" href="css/caixaStyle.css" />
 		<link rel="stylesheet" type="text/css" href="css/funcaoCentral.css" />
 
 		<!-- Link para arquivo de funções em javascript -->
-		<script type="text/javascript" src="javascript/almoxarifeScript.js"></script>
 		
 		<!-- Padrão de codificação de caracteres -->
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -53,49 +51,23 @@
 			<div class="btnHeader posRig">
 				<img class="iconHeader" src="imgs/icons/iconConfig.png"/>
 			</div>
-			<div class="btnHeader posRig" onclick=parent.location.href="almoxarife.html">
+			<div class="btnHeader posRig" onclick=parent.location.href="caixa.html">
 				<img class="iconHeader" src="imgs/icons/iconHome.png"/>
 			</div>
 		</header>
 
-		<!-- Área central da página do almoxarife -->
+		<!-- Área central da página do caixa -->
 		<article id="central">
 			
 			<!-- Identificação do cargo -->
 			<div id="cargoLog">
-				<label class="lblCargo" for="cargo">ALMOXARIFE</label>
+				<label class="lblCargo" for="cargo">CAIXA</label>
 			</div>
 
 			<!-- Botões de acesso a funções do sistema -->
-			
-			<!-- Página Principal-->
-			<div class="orgBtnCentral" id="principal">
-				<div class="btnFuncMaior" onClick=divVisible(lista); >Listar e Solicitar</div>
-				<div class="btnFuncMaior" onClick=divVisible(cadastro); >Cadastrar</div>
-				<div class="btnFuncMaior" onClick=divVisible(consulta); >Consultar</div>
-				<div class="btnFuncMaior" onClick=parent.location.href=".html">Datas Entrega Fornecedor</div>
-			</div>
-			
-			<!-- Acesso a Página de Listas e Solicitações-->
-			<div class="orgBtnCentral" id="lista">
-				<div class="btnFuncMaior">Lista de Pedidos para transferência</div>
-				<div class="btnFuncMaior">Lista de Produtos Geral do Dia</div>
-				<div class="btnFuncMedio">Lista de Produtos Geral da Semana</div>
-				<div class="btnFuncMedio">Solicitar Compra</div>
-				<div class="btnFuncMedio">Solicitar Produto</div>
-			</div>
-			
-			<!-- Acesso a Página de Cadastro-->
-			<div class="orgBtnCentral" id="cadastro">
-				<div class="btnFuncMaior">Cadastrar Fornecedor</div>
-				<div class="btnFuncMaior">Cadastrar Produto</div>
-			</div>
-			
-			<!-- Acesso a Página de Consultas-->
-			<div class="orgBtnCentral" id="consulta">				
-				<div class="btnFuncMaior">Consultar Fornecedor</div>
-				<div class="btnFuncMaior">Consultar Estoque Geral</div>
-				<div class="btnFuncMaior">Consultar Compra</div>
+			<div class="orgBtnCentral">
+				<div class="btnFuncGrande" >Solicitar Produto</div>
+				<div class="btnFuncGrande" >Consultar Sub-Estoque</div>
 			</div>
 		</article>
 
