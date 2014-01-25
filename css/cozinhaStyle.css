@@ -7,7 +7,7 @@
 						<!-- == VERSÃO...: 0.1 Beta							 == -->
 						<!-- == ============================================ == -->
 						<!-- == ARQUIVO..: cozinhaStyle.css   				 == -->
-						<!-- == ALTERAÇÃO: 13/01/14							 == -->
+						<!-- == ALTERAÇÕES: 13/01/14 E 24/01/14							 == -->
 						<!-- == DESCRIÇÃO: Folha de estilo com formatação da == -->
 						<!-- == da página do cozinheiro, auxiliar do 		 == -->
 						<!-- == cozinheiro, saladeiro e auxiliar do saladeiro== -->
@@ -150,4 +150,73 @@
 .positionFunc{
 	margin-bottom: 10px;
 	
+}
+
+/* ========== Botões de acesso as funções ==========*/
+
+.iconBtn{
+	/* Tamanho */
+	height: 80px;
+	width: 80px;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 40px;
+	left: 84px;
+}
+
+.nameBtn{
+	/* Formatação */
+	font: 18px Arial;
+	letter-spacing: 2px;
+	color: white;
+
+	/* Posicionamento */
+	position: absolute;
+	top: 70%;
+	left: 18%;
+}
+
+/* ========== Posições do Label dos botões ========== */
+
+.pos0{
+	/* Posicionamento */
+	top: 70%;
+	left: 8%;
+}
+
+.pos1{
+	/* Posicionamento */
+	top: 70%;
+	left: 11%;
+}
+
+.pos2{
+	/* Posicionamento */
+	top: 70%;
+	left: 25%;
+}
+
+.pos3{
+	/* Posicionamento */
+	top: 70%;
+	left: 19%;
+}
+
+.pos4{
+	/* Posicionamento */
+	top: 70%;
+	left: 12%;
+}
+
+.pos5{
+	/* Posicionamento */
+	top: 70%;
+	left: 18%;
+}
+
+.pos6{
+	/* Posicionamento */
+	top: 70%;
+	left: 9%;
 }
